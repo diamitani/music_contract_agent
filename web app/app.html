@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artispreneur Contract Agent — Workspace</title>
+  <meta name="description" content="Artispreneur Contract Agent — Artist-first contract drafting, review, and negotiation workspace.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="colors_and_type.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/app-shell.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/workspace.css">
+  <link rel="stylesheet" href="css/review.css">
+  <link rel="stylesheet" href="css/library.css">
+  <link rel="stylesheet" href="css/documents.css">
+  <link rel="stylesheet" href="css/deal-facts.css">
+</head>
+<body>
+
+  <!-- Mobile overlay -->
+  <div class="sidebar-mobile-overlay" id="mobileOverlay"></div>
+
+  <div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="app-sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-logo">
+          <img src="assets/logo.png" alt="Artispreneur" width="28" height="28">
+          <span>Artispreneur</span>
+        </a>
+      </div>
+
+      <div class="workspace-switcher">
+        <button class="ws-toggle">
+          <span class="ws-toggle-left">
+            <span class="ws-dot"></span> Contract Agent
+          </span>
+          <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-section-label">Navigation</div>
+      <div class="sidebar-nav">
+        <button class="sidebar-nav-item active" data-section="dashboard-home" onclick="loadAppSection('dashboard-home')">
+          <i data-lucide="home"></i> Home
+        </button>
+        <button class="sidebar-nav-item" data-section="contract-workspace" onclick="loadAppSection('contract-workspace')">
+          <i data-lucide="file-plus"></i> Contract Agent
+        </button>
+        <button class="sidebar-nav-item" data-section="my-documents" onclick="loadAppSection('my-documents')">
+          <i data-lucide="folder"></i> My Documents
+        </button>
+        <button class="sidebar-nav-item" data-section="contract-library" onclick="loadAppSection('contract-library')">
+          <i data-lucide="book-open"></i> Contract Library
+        </button>
+        <button class="sidebar-nav-item" data-section="saved-deal-facts" onclick="loadAppSection('saved-deal-facts')">
+          <i data-lucide="user"></i> Saved Deal Facts
+        </button>
+        <button class="sidebar-nav-item" data-section="learning-hub" onclick="loadAppSection('learning-hub')">
+          <i data-lucide="graduation-cap"></i> Learning Hub
+        </button>
+        <button class="sidebar-nav-item" data-section="settings" onclick="loadAppSection('settings')">
+          <i data-lucide="settings"></i> Settings
+        </button>
+      </div>
+
+      <div class="sidebar-section-label">Agents</div>
+      <div class="agents-section">
+        <button class="agent-item active" onclick="loadAppSection('contract-workspace')">
+          <i data-lucide="file-text"></i> Contract Agent
+        </button>
+        <button class="agent-item coming-soon">
+          <i data-lucide="layout-grid"></i> EPK Builder
+        </button>
+        <button class="agent-item coming-soon">
+          <i data-lucide="palette"></i> Brand Strategist
+        </button>
+        <button class="agent-item coming-soon">
+          <i data-lucide="megaphone"></i> PR Manager
+        </button>
+        <button class="agent-item coming-soon">
+          <i data-lucide="calendar"></i> Booking Manager
+        </button>
+        <button class="agent-item coming-soon">
+          <i data-lucide="package"></i> Distribution Manager
+        </button>
+        <button class="agent-item coming-soon">
+          <i data-lucide="dollar-sign"></i> Finance Manager
+        </button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="plan-indicator">
+          <span>Artist Plan</span>
+          <span>6/10 drafts</span>
+        </div>
+        <div class="plan-bar">
+          <div class="plan-bar-fill" style="width:60%;"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN AREA -->
+    <div class="app-main">
+      <!-- TOPBAR -->
+      <header class="app-topbar">
+        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Menu">
+          <i data-lucide="menu"></i>
+        </button>
+        <div class="topbar-search">
+          <i data-lucide="search"></i>
+          <input type="text" placeholder="Search contracts, documents, deal facts..." id="topbarSearch">
+          <span class="shortcut-hint">⌘K</span>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-primary btn-sm" onclick="navigateTo('app','contract-workspace')">
+            <i data-lucide="plus" style="width:14px;height:14px;"></i> New Contract
+          </button>
+          <button class="topbar-btn has-notification" style="position:relative;" onclick="showToast('No new notifications','warning')">
+            <i data-lucide="bell"></i>
+          </button>
+          <div style="position:relative;">
+            <button class="topbar-avatar" onclick="toggleDropdown('profileMenu')">MA</button>
+            <div class="dropdown-menu" id="profileMenu">
+              <div class="dropdown-item"><i data-lucide="user"></i> Profile</div>
+              <div class="dropdown-item"><i data-lucide="credit-card"></i> Billing</div>
+              <div class="dropdown-item"><i data-lucide="users"></i> Team</div>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-item danger" onclick="navigateTo('landing')"><i data-lucide="log-out"></i> Sign Out</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- CONTENT AREA -->
+      <main class="app-content" id="app-content">
+        <!-- Dashboard Home loaded by default -->
+      </main>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/workspace.js"></script>
+  <script src="js/review.js"></script>
+  <script src="js/library.js"></script>
+  <script>
+    // Mobile sidebar toggle
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('mobile-open');
+      document.getElementById('mobileOverlay').classList.toggle('active');
+    });
+    document.getElementById('mobileOverlay').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.remove('mobile-open');
+      document.getElementById('mobileOverlay').classList.remove('active');
+    });
+
+    // Topbar search opens command palette
+    document.getElementById('topbarSearch').addEventListener('focus', (e) => {
+      e.target.blur();
+      // Trigger Cmd+K
+      const evt = new KeyboardEvent('keydown', { metaKey: true, key: 'k' });
+      document.dispatchEvent(evt);
+    });
+
+    // Load initial section from URL or default
+    const urlParams = new URLSearchParams(window.location.search);
+    const section = urlParams.get('section') || sessionStorage.getItem('app-section') || 'dashboard-home';
+    loadAppSection(section);
+
+    // Re-init icons after dynamic content
+    setTimeout(() => lucide.createIcons(), 100);
+  </script>
+</body>
+</html>

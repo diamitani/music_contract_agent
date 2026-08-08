@@ -1,0 +1,85 @@
+<div class="page-header">
+  <div>
+    <h1 class="page-title">My Documents</h1>
+    <p class="page-subtitle">All your drafted, reviewed, and signed contracts in one place</p>
+  </div>
+  <button class="btn btn-primary btn-sm" onclick="navigateTo('app','contract-workspace')">
+    <i data-lucide="plus" style="width:14px;height:14px;"></i> New Contract
+  </button>
+</div>
+
+<!-- Filters -->
+<div style="display:flex;gap:var(--space-3);margin-bottom:var(--space-6);">
+  <button class="chip selected">All Documents</button>
+  <button class="chip">Drafts</button>
+  <button class="chip">In Review</button>
+  <button class="chip">Ready to Sign</button>
+  <button class="chip">Signed / Archived</button>
+</div>
+
+<!-- Table -->
+<div class="section-card">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Document Name</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Modified</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+        <td style="font-weight:var(--weight-semibold);">Producer Agreement — Midnight Drive</td>
+        <td>Producer / Composer</td>
+        <td><span class="badge badge-drafting"><span class="badge-dot"></span> Drafting</span></td>
+        <td>Today, 2:15 PM</td>
+        <td><button class="btn btn-ghost btn-sm" onclick="event.stopPropagation();toggleDropdown('dd1')"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+      </tr>
+      <tr onclick="navigateTo('app','contract-review')" style="cursor:pointer;">
+        <td style="font-weight:var(--weight-semibold);">Artist Management Agreement — KM Management</td>
+        <td>Artist Management</td>
+        <td><span class="badge badge-review"><span class="badge-dot"></span> In Review</span></td>
+        <td>Aug 7, 2026</td>
+        <td><button class="btn btn-ghost btn-sm" onclick="event.stopPropagation();toggleDropdown('dd2')"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+      </tr>
+      <tr>
+        <td style="font-weight:var(--weight-semibold);">Venue Performance — The Echo</td>
+        <td>Venue Performance</td>
+        <td><span class="badge badge-review"><span class="badge-dot"></span> In Review</span></td>
+        <td>Aug 7, 2026</td>
+        <td><button class="btn btn-ghost btn-sm"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+      </tr>
+      <tr>
+        <td style="font-weight:var(--weight-semibold);">Split Sheet — Summer Nights (50/50)</td>
+        <td>Songwriter Split Sheet</td>
+        <td><span class="badge badge-ready"><span class="badge-dot"></span> Ready</span></td>
+        <td>Aug 5, 2026</td>
+        <td><button class="btn btn-ghost btn-sm"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+      </tr>
+      <tr>
+        <td style="font-weight:var(--weight-semibold);">Exclusive Beat License — Neon Nights</td>
+        <td>Exclusive Beat License</td>
+        <td><span class="badge badge-signed"><span class="badge-dot"></span> Signed</span></td>
+        <td>Aug 3, 2026</td>
+        <td><button class="btn btn-ghost btn-sm"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+      </tr>
+      <tr>
+        <td style="font-weight:var(--weight-semibold);">Independent Contractor — Videographer</td>
+        <td>Independent Contractor</td>
+        <td><span class="badge badge-signed"><span class="badge-dot"></span> Signed</span></td>
+        <td>Jul 28, 2026</td>
+        <td><button class="btn btn-ghost btn-sm"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Empty state (hidden by default) -->
+<div class="empty-state" style="display:none;">
+  <i data-lucide="folder"></i>
+  <h4>No documents yet</h4>
+  <p>Start your first contract and it will appear here. All your drafts, reviews, and signed agreements stay organized in one place.</p>
+  <button class="btn btn-primary" onclick="navigateTo('app','contract-workspace')">Start a Contract</button>
+</div>

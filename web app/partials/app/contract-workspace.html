@@ -1,0 +1,359 @@
+<div class="workspace-layout">
+  <!-- LEFT PANEL: Matter / Context -->
+  <div class="ws-left">
+    <div class="ws-left-header">
+      <h3 class="ws-matter-title">Producer Agreement for "Midnight Drive"</h3>
+      <div class="ws-matter-subtitle">Matter #CA-2026-0042</div>
+      <div style="margin-top:8px;">
+        <span class="badge badge-drafting"><span class="badge-dot"></span> Drafting</span>
+      </div>
+    </div>
+
+    <!-- Progress Tracker -->
+    <div class="ws-progress">
+      <div class="ws-left-section-title">Progress</div>
+      <div class="progress-tracker" id="wsTracker">
+        <div class="progress-step completed" data-step="1">
+          <div class="progress-indicator">1</div>
+          <div class="progress-label">Choose workflow</div>
+        </div>
+        <div class="progress-step completed" data-step="2">
+          <div class="progress-indicator">2</div>
+          <div class="progress-label">Gather deal facts</div>
+        </div>
+        <div class="progress-step active" data-step="3">
+          <div class="progress-indicator">3</div>
+          <div class="progress-label">Review terms</div>
+        </div>
+        <div class="progress-step" data-step="4">
+          <div class="progress-indicator">4</div>
+          <div class="progress-label">Generate documents</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal Facts -->
+    <div class="ws-left-section">
+      <div class="ws-left-section-title">Deal Facts</div>
+      <div class="ws-fact-group">
+        <div class="ws-fact-group-title">Parties</div>
+        <div class="fact-field">
+          <div class="fact-label">Artist</div>
+          <div class="fact-value">Marcus Avery (p/k/a "MAV")</div>
+        </div>
+        <div class="fact-field">
+          <div class="fact-label">Producer</div>
+          <div class="fact-value">Dominic Reyes</div>
+        </div>
+      </div>
+      <div class="ws-fact-group">
+        <div class="ws-fact-group-title">Project</div>
+        <div class="fact-field">
+          <div class="fact-label">Track</div>
+          <div class="fact-value">"Midnight Drive"</div>
+        </div>
+        <div class="fact-field">
+          <div class="fact-label">Contract Type</div>
+          <div class="fact-value">Producer / Composer Agreement</div>
+        </div>
+      </div>
+      <div class="ws-fact-group">
+        <div class="ws-fact-group-title">Money</div>
+        <div class="fact-field">
+          <div class="fact-label">Producer Fee</div>
+          <div class="fact-value">$2,500 flat fee</div>
+        </div>
+        <div class="fact-field">
+          <div class="fact-label">Royalty Points</div>
+          <div class="fact-value missing">Not yet set</div>
+        </div>
+      </div>
+      <div class="ws-fact-group">
+        <div class="ws-fact-group-title">Rights</div>
+        <div class="fact-field">
+          <div class="fact-label">Master Ownership</div>
+          <div class="fact-value">Artist retains 100%</div>
+        </div>
+        <div class="fact-field">
+          <div class="fact-label">Producer Credit</div>
+          <div class="fact-value">"Produced by Dominic Reyes"</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contract Type Selector -->
+    <div class="ws-left-section">
+      <div class="ws-left-section-title">Contract Type</div>
+      <select class="form-input form-select" style="font-size:var(--text-xs);">
+        <option selected>Producer / Composer Agreement</option>
+        <option>Producer Royalties Agreement</option>
+        <option>Production Agreement</option>
+        <option>Talent / Producer Agreement</option>
+        <option>Work-for-Hire Agreement</option>
+      </select>
+    </div>
+
+    <div class="ws-left-section">
+      <button class="btn btn-outline btn-sm" style="width:100%;" onclick="showToast('New matter started','success')">+ New Matter</button>
+    </div>
+  </div>
+
+  <!-- CENTER PANEL: Agent Chat -->
+  <div class="ws-center">
+    <div class="ws-center-header">
+      <div class="ws-agent-avatar">A</div>
+      <div class="ws-agent-info">
+        <h4>Artispreneur Contract Agent</h4>
+        <p>Artist-first support for your music deals</p>
+      </div>
+      <div class="ws-agent-status">
+        <span class="ws-status-dot"></span> Active
+      </div>
+    </div>
+
+    <div class="ws-chat" id="wsChat">
+      <!-- Agent: Welcome -->
+      <div class="ws-msg-group agent">
+        <span class="ws-msg-label">Contract Agent</span>
+        <div class="ws-msg-card">
+          <p>Hey Marcus — I've loaded your Producer / Composer Agreement for "Midnight Drive" with Dominic Reyes.</p>
+          <p>We're at step 3 of 4: <strong>Review terms</strong>. Here's where we left off:</p>
+        </div>
+      </div>
+
+      <!-- Agent: Royalty recommendation -->
+      <div class="ws-msg-group agent">
+        <span class="ws-msg-label">Contract Agent</span>
+        <div class="ws-msg-card recommend">
+          <p><strong>Recommended:</strong> You retain 100% ownership of the master recording. Dominic receives his $2,500 flat fee plus negotiated royalty points — no ownership transfer.</p>
+          <p>For independent projects like this, the standard range is 15–20% of net royalties for the producer. What royalty percentage works for you?</p>
+        </div>
+      </div>
+
+      <!-- User response -->
+      <div class="ws-msg-group user">
+        <span class="ws-msg-label">You</span>
+        <div class="ws-msg-card" style="background:var(--color-crimson);color:var(--color-white);border:none;">
+          <p>Let's do 18% net royalties for Dominic.</p>
+        </div>
+      </div>
+
+      <!-- Agent: confirming and next question -->
+      <div class="ws-msg-group agent">
+        <span class="ws-msg-label">Contract Agent</span>
+        <div class="ws-msg-card agent-msg">
+          <p>18% — good call. That's right in the fair range for a producer who's handling composition, arrangement, and studio production.</p>
+          <p>Now: should the royalty apply to <strong>all formats</strong> (streaming, downloads, physical, sync licenses) or just the <strong>master recording</strong> only?</p>
+        </div>
+      </div>
+
+      <!-- Agent: chips -->
+      <div class="ws-msg-group agent">
+        <span class="ws-msg-label">Contract Agent</span>
+        <div class="ws-msg-card">
+          <p style="margin-bottom:12px;">Pick the scope that fits your deal:</p>
+          <div class="chip-row">
+            <span class="chip selected" onclick="this.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));this.classList.add('selected');">All formats (recommended)</span>
+            <span class="chip" onclick="this.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));this.classList.add('selected');">Master recording only</span>
+            <span class="chip" onclick="this.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));this.classList.add('selected');">Streaming only</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading indicator -->
+      <div class="ws-msg-group agent" id="wsLoading" style="display:none;">
+        <span class="ws-msg-label">Contract Agent</span>
+        <div class="ws-msg-card" style="display:flex;align-items:center;gap:12px;padding:16px 20px;">
+          <div style="display:flex;gap:4px;">
+            <div style="width:6px;height:6px;background:var(--color-crimson);border-radius:50%;animation:pulse 0.8s ease infinite;"></div>
+            <div style="width:6px;height:6px;background:var(--color-crimson);border-radius:50%;animation:pulse 0.8s ease 0.2s infinite;"></div>
+            <div style="width:6px;height:6px;background:var(--color-crimson);border-radius:50%;animation:pulse 0.8s ease 0.4s infinite;"></div>
+          </div>
+          <p style="margin:0;font-size:13px;color:var(--color-text-muted);">Reviewing the deal details and preparing your next questions…</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Composer -->
+    <div class="ws-composer">
+      <div class="ws-composer-inner">
+        <button class="ws-composer-btn" title="Attach file"><i data-lucide="paperclip" style="width:18px;height:18px;"></i></button>
+        <button class="ws-composer-btn" title="Upload voice note"><i data-lucide="mic" style="width:18px;height:18px;"></i></button>
+        <textarea placeholder="Type your response or ask a question..." id="wsComposerInput"></textarea>
+        <button class="ws-composer-btn ws-composer-send" onclick="sendWorkspaceMessage()"><i data-lucide="send" style="width:18px;height:18px;"></i></button>
+      </div>
+      <div class="ws-suggestions">
+        <span class="ws-suggestion" onclick="document.getElementById('wsComposerInput').value='Let\'s go with all formats. What\'s next?';document.getElementById('wsComposerInput').focus();">All formats — what's next?</span>
+        <span class="ws-suggestion" onclick="document.getElementById('wsComposerInput').value='Can Dominic also get co-writer credit on the publishing side?';document.getElementById('wsComposerInput').focus();">Publishing credit question</span>
+        <span class="ws-suggestion" onclick="document.getElementById('wsComposerInput').value='What about recoupment of the $2,500 fee?';document.getElementById('wsComposerInput').focus();">Recoupment terms</span>
+        <span class="ws-suggestion" onclick="document.getElementById('wsComposerInput').value='I\'d like to see the full draft so far.';document.getElementById('wsComposerInput').focus();">Show me the draft</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL: Outputs / Artifacts -->
+  <div class="ws-right">
+    <div class="ws-right-tabs">
+      <button class="tab active" data-tab="preview" onclick="switchWsTab(this,'preview')">Contract Preview</button>
+      <button class="tab" data-tab="summary" onclick="switchWsTab(this,'summary')">Deal Summary</button>
+      <button class="tab" data-tab="risks" onclick="switchWsTab(this,'risks')">Risks</button>
+      <button class="tab" data-tab="assumptions" onclick="switchWsTab(this,'assumptions')">Assumptions</button>
+      <button class="tab" data-tab="documents" onclick="switchWsTab(this,'documents')">Documents</button>
+    </div>
+
+    <!-- Contract Preview tab -->
+    <div class="ws-right-content tab-panel" data-panel="preview">
+      <div class="contract-preview">
+        <h2>Producer / Composer Agreement</h2>
+        <p style="text-align:center;font-size:var(--text-xs);color:var(--color-text-muted);">Draft v2 · 8 pages</p>
+
+        <h3>1. Parties</h3>
+        <p>This Producer / Composer Agreement (the "Agreement") is entered into as of <span class="placeholder-field">[Date]</span> by and between:</p>
+        <p><strong>Marcus Avery</strong>, professionally known as "MAV" ("Artist"), and</p>
+        <p><strong>Dominic Reyes</strong> ("Producer").</p>
+
+        <h3>2. Services</h3>
+        <p>Producer agrees to provide production, composition, arrangement, and recording services for the musical work titled <span class="placeholder-field">"Midnight Drive"</span> (the "Master Recording").</p>
+
+        <h3>3. Compensation</h3>
+        <p><strong>Flat Fee:</strong> Artist shall pay Producer a one-time fee of <span class="placeholder-field">$2,500.00</span> upon execution of this Agreement.</p>
+        <p><strong>Royalty:</strong> Producer shall receive <span class="placeholder-field">18%</span> of net royalties received by Artist from exploitation of the Master Recording across all formats.</p>
+
+        <h3>4. Ownership</h3>
+        <p>Artist shall retain one hundred percent (100%) ownership of the Master Recording and all copyrights therein. Producer's contribution is a work made for hire to the extent permitted by law.</p>
+
+        <h3>5. Credit</h3>
+        <p>Producer shall receive credit as "Produced by Dominic Reyes" on all releases of the Master Recording.</p>
+
+        <p style="text-align:center;color:var(--color-text-muted);margin-top:32px;">— Draft in progress —</p>
+      </div>
+    </div>
+
+    <!-- Deal Summary tab -->
+    <div class="ws-right-content tab-panel" data-panel="summary" style="display:none;">
+      <div class="summary-item"><span class="summary-label">Deal Type</span><span class="summary-value">Producer / Composer Agreement</span></div>
+      <div class="summary-item"><span class="summary-label">Artist</span><span class="summary-value">Marcus Avery (MAV)</span></div>
+      <div class="summary-item"><span class="summary-label">Producer</span><span class="summary-value">Dominic Reyes</span></div>
+      <div class="summary-item"><span class="summary-label">Track</span><span class="summary-value">"Midnight Drive"</span></div>
+      <div class="summary-item"><span class="summary-label">Producer Fee</span><span class="summary-value">$2,500 flat</span></div>
+      <div class="summary-item"><span class="summary-label">Royalty</span><span class="summary-value">18% net (all formats)</span></div>
+      <div class="summary-item"><span class="summary-label">Master Ownership</span><span class="summary-value">Artist 100%</span></div>
+      <div class="summary-item"><span class="summary-label">Credit</span><span class="summary-value">"Produced by Dominic Reyes"</span></div>
+      <div class="summary-item"><span class="summary-label">Territory</span><span class="summary-value">Worldwide</span></div>
+      <div class="summary-item"><span class="summary-label">Term</span><span class="summary-value">Life of copyright</span></div>
+      <div class="summary-item"><span class="summary-label">Governing Law</span><span class="summary-value">California</span></div>
+    </div>
+
+    <!-- Risks tab -->
+    <div class="ws-right-content tab-panel" data-panel="risks" style="display:none;">
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">Royalty on All Formats</span>
+          <span class="risk-badge risk-medium">MEDIUM</span>
+        </div>
+        <div class="risk-item-desc">Producer receives royalties on all formats — including sync licenses and physical. This is standard but reduces your net on high-value sync placements.</div>
+        <div class="risk-item-actions">
+          <button class="btn btn-outline btn-sm" onclick="showToast('Negotiation note added','success')">Ask for a change</button>
+        </div>
+      </div>
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">Worldwide, Perpetual Rights</span>
+          <span class="risk-badge risk-low">LOW</span>
+        </div>
+        <div class="risk-item-desc">Term is "life of copyright" — standard. You should confirm territory matches your distribution plan.</div>
+        <div class="risk-item-actions">
+          <button class="btn btn-ghost btn-sm" onclick="showToast('Noted','success')">Understood</button>
+        </div>
+      </div>
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">No Reversion Clause</span>
+          <span class="risk-badge risk-low">LOW</span>
+        </div>
+        <div class="risk-item-desc">Since you retain 100% ownership, a reversion clause isn't needed. Confirmed this is artist-friendly.</div>
+      </div>
+    </div>
+
+    <!-- Assumptions tab -->
+    <div class="ws-right-content tab-panel" data-panel="assumptions" style="display:none;">
+      <p style="font-size:13px;color:var(--color-text-muted);margin-bottom:16px;">Unconfirmed deal facts that may affect your draft:</p>
+      <div class="assumption-item">
+        <span class="assumption-label">Royalty percentage</span>
+        <button class="btn btn-outline btn-sm" onclick="showToast('Resolved: 18%','success')">Resolve</button>
+      </div>
+      <div class="assumption-item">
+        <span>Advance/recoupment terms</span>
+        <button class="btn btn-ghost btn-sm">Resolve</button>
+      </div>
+      <div class="assumption-item">
+        <span>Exact delivery deadline</span>
+        <button class="btn btn-ghost btn-sm">Resolve</button>
+      </div>
+      <div class="assumption-item">
+        <span>Sampling rights clearance</span>
+        <button class="btn btn-ghost btn-sm">Resolve</button>
+      </div>
+    </div>
+
+    <!-- Documents tab -->
+    <div class="ws-right-content tab-panel" data-panel="documents" style="display:none;">
+      <div class="doc-file" onclick="showToast('Downloading draft...','success')">
+        <div class="doc-file-icon"><i data-lucide="file-text"></i></div>
+        <div class="doc-file-info">
+          <h4>Producer Agreement — Midnight Drive — Draft v2.docx</h4>
+          <p>43 KB · Generated today, 2:15 PM</p>
+        </div>
+        <i data-lucide="download" style="width:18px;height:18px;color:var(--color-text-muted);"></i>
+      </div>
+      <div class="doc-file" onclick="showToast('Downloading PDF...','success')">
+        <div class="doc-file-icon"><i data-lucide="file-text"></i></div>
+        <div class="doc-file-info">
+          <h4>Producer Agreement — Midnight Drive — Draft v2.pdf</h4>
+          <p>128 KB · Generated today, 2:16 PM</p>
+        </div>
+        <i data-lucide="download" style="width:18px;height:18px;color:var(--color-text-muted);"></i>
+      </div>
+
+      <hr class="section-divider">
+
+      <h4 style="font-size:13px;font-weight:600;margin-bottom:8px;">Share for Review</h4>
+      <button class="btn btn-outline btn-sm" style="width:100%;margin-bottom:8px;" onclick="showToast('Review link copied','success')">
+        <i data-lucide="link" style="width:14px;height:14px;"></i> Copy Share Link
+      </button>
+      <button class="btn btn-ghost btn-sm" style="width:100%;" onclick="showToast('Invitation sent','success')">
+        <i data-lucide="mail" style="width:14px;height:14px;"></i> Invite Collaborator
+      </button>
+
+      <hr class="section-divider">
+
+      <h4 style="font-size:13px;font-weight:600;margin-bottom:8px;">Version History</h4>
+      <div class="version-item">
+        <span class="version-num">v2</span><span>Current draft</span><span>Today, 2:15 PM</span>
+      </div>
+      <div class="version-item">
+        <span class="version-num">v1</span><span>Initial template</span><span>Today, 1:52 PM</span>
+      </div>
+    </div>
+
+    <!-- Legal Notice -->
+    <div class="legal-notice">
+      <i data-lucide="info" style="width:12px;height:12px;display:inline;vertical-align:middle;"></i>
+      This tool supports drafting and education and is not a substitute for legal advice. Certain matters should be reviewed by a licensed entertainment attorney.
+    </div>
+  </div>
+</div>
+
+<script>
+function switchWsTab(tab, panelName) {
+  const tabs = tab.parentElement.querySelectorAll('.tab');
+  tabs.forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+
+  const right = tab.closest('.ws-right');
+  const panels = right.querySelectorAll('.tab-panel');
+  panels.forEach(p => p.style.display = 'none');
+  const panel = right.querySelector(`[data-panel="${panelName}"]`);
+  if (panel) panel.style.display = 'block';
+}
+</script>

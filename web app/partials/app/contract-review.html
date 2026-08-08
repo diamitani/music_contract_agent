@@ -1,0 +1,180 @@
+<div class="review-container">
+  <!-- Stepper -->
+  <div class="review-stepper">
+    <div class="stepper">
+      <div class="stepper-step completed">
+        <div class="step-num">1</div> Upload
+      </div>
+      <div class="stepper-divider completed"></div>
+      <div class="stepper-step completed">
+        <div class="step-num">2</div> Extract
+      </div>
+      <div class="stepper-divider completed"></div>
+      <div class="stepper-step active">
+        <div class="step-num">3</div> Review
+      </div>
+      <div class="stepper-divider"></div>
+      <div class="stepper-step">
+        <div class="step-num">4</div> Redline / Export
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Layout -->
+  <div class="review-layout">
+    <!-- Annotated Document -->
+    <div class="review-doc" id="reviewDoc">
+      <div class="review-doc-meta">
+        <div>
+          <h3>Artist Management Agreement</h3>
+          <p>Uploaded Aug 1, 2026 · 14 pages · 3 parties detected</p>
+        </div>
+        <span class="badge badge-review"><span class="badge-dot"></span> In Review</span>
+      </div>
+
+      <h3>1. Term and Territory</h3>
+      <div class="clause highlight-yellow" onclick="openDrawer('Term Clause', drawerClauseTerm)">
+        <p>This Agreement shall commence on the Effective Date and continue for an initial period of <strong>three (3) years</strong> (the "Initial Term"), and shall automatically renew for successive one-year periods unless either party provides written notice of non-renewal at least sixty (60) days prior to the end of the then-current term.</p>
+      </div>
+
+      <h3>2. Manager's Commission</h3>
+      <div class="clause highlight-red" onclick="openDrawer('Commission Clause', drawerClauseCommission)">
+        <p>Manager shall receive a commission equal to <strong>twenty percent (20%)</strong> of all Gross Revenue derived from Artist's activities in the entertainment industry, including but not limited to recording, publishing, touring, merchandising, sponsorship, and endorsement income.</p>
+      </div>
+
+      <h3>3. Expenses</h3>
+      <div class="clause highlight-green">
+        <p>Manager shall be entitled to reimbursement for reasonable out-of-pocket expenses incurred on Artist's behalf, subject to Artist's prior written approval for any single expense exceeding two hundred fifty dollars ($250.00).</p>
+      </div>
+
+      <h3>4. Exclusivity</h3>
+      <div class="clause highlight-yellow" onclick="openDrawer('Exclusivity Clause', drawerClauseExclusivity)">
+        <p>During the term of this Agreement, Artist shall engage Manager as Artist's <strong>exclusive personal manager</strong> worldwide. Artist shall not engage any other person or entity to perform management services without Manager's prior written consent.</p>
+      </div>
+
+      <h3>5. Post-Term Commission</h3>
+      <div class="clause highlight-red" onclick="openDrawer('Post-Term Commission', drawerClausePostTerm)">
+        <p>Following termination of this Agreement, Manager shall continue to receive commissions on all revenue derived from agreements entered into during the term, for a period of <strong>five (5) years</strong> post-termination, or for the life of such agreements, whichever is longer.</p>
+      </div>
+    </div>
+
+    <!-- Risk Sidebar -->
+    <div class="review-sidebar">
+      <h3>Risk Assessment</h3>
+      <div class="risk-summary">
+        <div class="risk-count red">
+          <div class="risk-count-label">2</div>
+          <div class="risk-count-sub">High Risk</div>
+        </div>
+        <div class="risk-count yellow">
+          <div class="risk-count-label">2</div>
+          <div class="risk-count-sub">Review</div>
+        </div>
+        <div class="risk-count green">
+          <div class="risk-count-label">3</div>
+          <div class="risk-count-sub">Acceptable</div>
+        </div>
+      </div>
+
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">20% Commission Rate</span>
+          <span class="risk-badge risk-high">HIGH</span>
+        </div>
+        <div class="risk-item-desc">Industry standard is 15–20% for a full-service manager. 20% is at the top of the range and should come with strong justification.</div>
+        <div class="risk-item-actions">
+          <button class="btn btn-outline btn-sm" onclick="showToast('Negotiation note added','success')">Propose 15%</button>
+        </div>
+      </div>
+
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">5-Year Post-Term Commission</span>
+          <span class="risk-badge risk-high">HIGH</span>
+        </div>
+        <div class="risk-item-desc">Post-term commission tail is unusually long. Standard is 1–3 years post-term or tied to agreements still in effect. This could mean paying commissions on deals you negotiate yourself years later.</div>
+        <div class="risk-item-actions">
+          <button class="btn btn-outline btn-sm" onclick="showToast('Negotiation note added','success')">Propose 2 yrs</button>
+        </div>
+      </div>
+
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">Auto-Renewal Clause</span>
+          <span class="risk-badge risk-medium">MEDIUM</span>
+        </div>
+        <div class="risk-item-desc">Auto-renewal without a performance benchmark means you could be locked in even if the manager underperforms.</div>
+        <div class="risk-item-actions">
+          <button class="btn btn-ghost btn-sm" onclick="showToast('Noted','success')">Add performance clause</button>
+        </div>
+      </div>
+
+      <div class="risk-item">
+        <div class="risk-item-header">
+          <span class="risk-item-title">Expense Approval Threshold</span>
+          <span class="risk-badge risk-low">LOW</span>
+        </div>
+        <div class="risk-item-desc">$250 approval threshold is reasonable. Protects you from surprise expenses.</div>
+      </div>
+
+      <hr class="section-divider">
+
+      <button class="btn btn-primary" style="width:100%;margin-bottom:8px;" onclick="showToast('Counterproposal generated','success')">
+        <i data-lucide="edit-3" style="width:16px;height:16px;"></i> Generate Counterproposal
+      </button>
+      <button class="btn btn-outline" style="width:100%;" onclick="showToast('Review notes exported','success')">
+        <i data-lucide="download" style="width:16px;height:16px;"></i> Export Review Notes
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+const drawerClauseTerm = `
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">What this means</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">The manager is locked in for 3 years minimum, and the contract renews automatically unless you give 60 days' written notice. If you forget to send that notice, you're stuck for another year.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">Why it matters</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Auto-renewal without performance metrics means the manager can underperform and you're still contractually bound. You want the option to walk away if the manager isn't delivering results.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;color:var(--color-crimson);">Suggested artist-first revision</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Add a performance benchmark: "Manager shall secure at least [X] commercially released projects or [Y] in gross revenue for Artist during each contract year. Failure to meet this threshold gives Artist the right to terminate without penalty at the end of that year."</p>
+  <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="showToast('Added to negotiation notes','success');closeDrawer();">Add to Negotiation Notes</button>
+`;
+
+const drawerClauseCommission = `
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">What this means</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">The manager takes 20% of everything you earn from music — not just the deals they negotiate, but all entertainment income. This is on "gross" revenue, meaning before any expenses are deducted.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">Why it matters</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">20% of gross is the high end of industry standard. Most independent artists pay 15% (sometimes 10% for deals the artist sourced themselves). "Gross" means the manager gets paid even before you cover your own costs.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;color:var(--color-crimson);">Suggested artist-first revision</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Propose 15% on most deals, and consider a tiered rate: 15% on deals the manager sources, 10% on deals you source yourself, and exclude day-job or non-entertainment income entirely.</p>
+  <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="showToast('Added to negotiation notes','success');closeDrawer();">Add to Negotiation Notes</button>
+`;
+
+const drawerClauseExclusivity = `
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">What this means</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">You cannot work with any other manager, agent, or advisor without the manager's written approval. This is worldwide exclusivity — even if the manager has no contacts in a particular territory.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">Why it matters</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Exclusivity is standard in management deals, but "worldwide" with no carve-outs means you're locked in everywhere. Consider territory-specific exceptions where the manager has no actual reach.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;color:var(--color-crimson);">Suggested artist-first revision</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Accept worldwide exclusivity for deals the manager is actively working, but add: "Artist may engage a territory-specific manager outside North America with Manager's consent, such consent not to be unreasonably withheld."</p>
+  <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="showToast('Added to negotiation notes','success');closeDrawer();">Add to Negotiation Notes</button>
+`;
+
+const drawerClausePostTerm = `
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">What this means</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Even after you fire the manager, they keep collecting commissions for 5 years on any deal that was signed while they represented you — effectively forever if a deal has a long term.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;">Why it matters</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">A 5-year tail + "life of agreements" means the manager could collect commissions on your biggest deals long after they stop working for you. Industry standard is 1-3 years post-term.</p>
+  <hr class="section-divider">
+  <h4 style="font-family:var(--font-serif);margin-bottom:8px;color:var(--color-crimson);">Suggested artist-first revision</h4>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Propose a 2-year post-term tail, limited to agreements the manager "actively negotiated," and cap it so commissions stop after 2 years even if the underlying deal continues.</p>
+  <button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="showToast('Added to negotiation notes','success');closeDrawer();">Add to Negotiation Notes</button>
+`;
+</script>

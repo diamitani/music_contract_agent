@@ -1,0 +1,122 @@
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Contract Library</h1>
+    <p class="page-subtitle">30 templates across 6 categories — designed for independent artists</p>
+  </div>
+  <button class="btn btn-primary btn-sm" onclick="navigateTo('app','contract-workspace')">
+    <i data-lucide="file-plus" style="width:14px;height:14px;"></i> Start a Contract
+  </button>
+</div>
+
+<!-- Search & Filter -->
+<div style="display:flex;gap:var(--space-3);margin-bottom:var(--space-6);">
+  <div style="flex:1;max-width:400px;position:relative;">
+    <i data-lucide="search" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--color-text-muted);"></i>
+    <input class="form-input" placeholder="Search 30 templates..." style="padding-left:36px;" id="librarySearch">
+  </div>
+  <select class="form-input form-select" style="max-width:200px;" id="libraryFilter">
+    <option value="">All Categories</option>
+    <option>Management & Booking</option>
+    <option>Recording & Production</option>
+    <option>Songwriting & Publishing</option>
+    <option>Licensing</option>
+    <option>Live & Events</option>
+    <option>Brand & Content</option>
+    <option>Business & Operations</option>
+  </select>
+</div>
+
+<!-- Category: Artist & Management -->
+<h2 style="font-family:var(--font-serif);font-size:var(--text-lg);margin-bottom:var(--space-4);">Artist & Management</h2>
+<div class="grid-3" style="margin-bottom:var(--space-8);">
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Artist Management Agreement</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Full manager-artist relationship: commissions, term, exclusivity, expenses, post-term</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~15 min</span>
+    </div>
+  </div>
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Booking / Talent Agent Agreement</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Agent representation for live shows and tours with commission structure</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~12 min</span>
+    </div>
+  </div>
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Artist Booking Agreement</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Direct artist booking for a specific show or event — fee, rider, cancellation</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~10 min</span>
+    </div>
+  </div>
+</div>
+
+<!-- Category: Recording, Production & Distribution -->
+<h2 style="font-family:var(--font-serif);font-size:var(--text-lg);margin-bottom:var(--space-4);">Recording, Production & Distribution</h2>
+<div class="grid-3" style="margin-bottom:var(--space-8);">
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Producer / Composer Agreement</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Producer engagement: fee, royalties, ownership, credit, deliverables</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-drafting"><span class="badge-dot"></span> In progress</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~15 min</span>
+    </div>
+  </div>
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Artist / Label Recording Agreement</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Full recording deal: advances, royalties, options, territory, creative control</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~20 min</span>
+    </div>
+  </div>
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Music Distribution Agreement</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Distributor relationship: term, territory, rev share, accounting, reversion</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~12 min</span>
+    </div>
+  </div>
+</div>
+
+<!-- Category: Songwriting, Publishing & Licensing -->
+<h2 style="font-family:var(--font-serif);font-size:var(--text-lg);margin-bottom:var(--space-4);">Songwriting, Publishing & Licensing</h2>
+<div class="grid-3" style="margin-bottom:var(--space-8);">
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Songwriter Split Sheet</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">PRO-ready split sheet: writer shares, publisher info, IPI/CAE numbers</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~5 min</span>
+    </div>
+  </div>
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Sync / Master Use License</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">TV, film, game, and ad sync placement with master + publishing terms</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~10 min</span>
+    </div>
+  </div>
+  <div class="card" onclick="navigateTo('app','contract-workspace')" style="cursor:pointer;">
+    <h4 style="font-family:var(--font-serif);font-size:var(--text-base);margin:0 0 var(--space-2);">Exclusive Beat License</h4>
+    <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin:0 0 var(--space-3);">Full exclusive rights to a beat: ownership transfer, streaming caps, buyout</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <span class="badge badge-ready"><span class="badge-dot"></span> Template ready</span>
+      <span style="font-size:var(--text-xs);color:var(--color-text-muted);">~10 min</span>
+    </div>
+  </div>
+</div>
+
+<!-- Need something else? -->
+<div class="card card-parchment" style="text-align:center;padding:var(--space-8);margin-bottom:var(--space-8);">
+  <i data-lucide="search" style="width:32px;height:32px;color:var(--color-crimson);margin-bottom:var(--space-3);"></i>
+  <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);margin:0 0 var(--space-2);">Need something else?</h3>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin:0 0 var(--space-4);">If your deal type isn't in the library, the Contract Agent can draft from an original framework — adapting artist-protective defaults to your situation.</p>
+  <a href="app.html?section=contract-workspace" class="btn btn-primary btn-sm">Start a custom draft</a>
+</div>

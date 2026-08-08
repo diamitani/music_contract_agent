@@ -4,11 +4,10 @@
   "description": "Artispreneur Contract Agent — AI-powered music contract drafting and review",
   "private": true,
   "scripts": {
-    "dev": "vercel dev",
+    "start": "echo 'Use: npx vercel dev'",
     "deploy": "vercel --prod"
   },
-  "dependencies": {},
   "devDependencies": {
-    "vercel": "^latest"
+    "vercel": "^58.9.0"
   }
 }

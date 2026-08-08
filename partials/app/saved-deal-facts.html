@@ -1,0 +1,125 @@
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Saved Deal Facts</h1>
+    <p class="page-subtitle">Reusable information that speeds up every contract you draft. You control what's shared.</p>
+  </div>
+</div>
+
+<div class="grid-2">
+  <!-- Personal Info -->
+  <div class="section-card">
+    <div class="section-card-header">
+      <h3 class="section-card-title">Artist / Personal Info</h3>
+      <button class="btn btn-ghost btn-sm" onclick="showToast('Saved','success')">Edit</button>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Legal Name</div>
+      <div class="fact-value">Marcus Avery</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Stage / Business Name</div>
+      <div class="fact-value">MAV</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Email</div>
+      <div class="fact-value">marcus@mavmusic.com</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Phone</div>
+      <div class="fact-value missing">Not provided</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Address</div>
+      <div class="fact-value">Los Angeles, CA</div>
+    </div>
+  </div>
+
+  <!-- Business Info -->
+  <div class="section-card">
+    <div class="section-card-header">
+      <h3 class="section-card-title">Business Info</h3>
+      <button class="btn btn-ghost btn-sm" onclick="showToast('Saved','success')">Edit</button>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Business Entity</div>
+      <div class="fact-value missing">Not provided — <a href="#" style="color:var(--color-crimson);">Add LLC or Corp</a></div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">EIN / Tax ID</div>
+      <div class="fact-value missing">Not provided</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">PRO Affiliation</div>
+      <div class="fact-value">ASCAP</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">IPI / CAE Number</div>
+      <div class="fact-value">123456789</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Publisher</div>
+      <div class="fact-value missing">Self-published (no entity)</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Distributor</div>
+      <div class="fact-value">DistroKid</div>
+    </div>
+  </div>
+
+  <!-- Legal Preferences -->
+  <div class="section-card">
+    <div class="section-card-header">
+      <h3 class="section-card-title">Legal Preferences</h3>
+      <button class="btn btn-ghost btn-sm" onclick="showToast('Saved','success')">Edit</button>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Preferred Governing Law</div>
+      <div class="fact-value">California, United States</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Dispute Resolution</div>
+      <div class="fact-value">Arbitration (JAMS) in Los Angeles County</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Default Territory</div>
+      <div class="fact-value">Worldwide</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Default Term Preference</div>
+      <div class="fact-value">Life of copyright with reversion</div>
+    </div>
+  </div>
+
+  <!-- Collaborators -->
+  <div class="section-card">
+    <div class="section-card-header">
+      <h3 class="section-card-title">Frequent Collaborators</h3>
+      <button class="btn btn-ghost btn-sm" onclick="showToast('Saved','success')">Add</button>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Dominic Reyes</div>
+      <div class="fact-value">Producer · dom.reyes@email.com</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">Jasmine Cole</div>
+      <div class="fact-value">Songwriter · jasmine@email.com</div>
+    </div>
+    <div class="fact-field">
+      <div class="fact-label">KM Management</div>
+      <div class="fact-value">Management · info@kmmanagement.com</div>
+    </div>
+  </div>
+</div>
+
+<!-- Privacy -->
+<div class="section-card card-parchment" style="margin-top:var(--space-6);">
+  <div class="section-card-header">
+    <h3 class="section-card-title">Privacy Controls</h3>
+  </div>
+  <p style="font-size:var(--text-sm);color:var(--color-text-secondary);margin-bottom:var(--space-4);">You control which saved facts are reused in new contracts. Facts marked "reuse" auto-populate when you start a new deal. Facts left unmarked stay saved but ask for confirmation each time.</p>
+  <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
+    <button class="btn btn-outline btn-sm">Manage Auto-Reuse Settings</button>
+    <button class="btn btn-ghost btn-sm" onclick="showModal('Delete Saved Facts','This will permanently remove all saved deal facts. You will need to re-enter information for each new contract.',[{label:'Cancel'},{label:'Delete All',primary:true,onClick:()=>showToast('All facts deleted','error')}])">Delete All Facts</button>
+    <button class="btn btn-ghost btn-sm" onclick="showToast('Data exported','success')">Export My Data</button>
+  </div>
+</div>

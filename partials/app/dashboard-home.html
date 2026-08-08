@@ -1,0 +1,194 @@
+<div class="dash-greeting">Good afternoon, Marcus</div>
+<p class="dash-subtitle">Here's where your deals stand today.</p>
+
+<!-- Quick Actions -->
+<div class="quick-actions">
+  <div class="quick-action" onclick="navigateTo('app','contract-workspace')">
+    <i data-lucide="file-plus"></i>
+    <span class="quick-action-label">Draft a Contract</span>
+  </div>
+  <div class="quick-action" onclick="navigateTo('app','contract-review')">
+    <i data-lucide="search"></i>
+    <span class="quick-action-label">Review an Agreement</span>
+  </div>
+  <div class="quick-action" onclick="navigateTo('app','contract-workspace')">
+    <i data-lucide="help-circle"></i>
+    <span class="quick-action-label">Explain a Clause</span>
+  </div>
+  <div class="quick-action" onclick="navigateTo('app','contract-workspace')">
+    <i data-lucide="users"></i>
+    <span class="quick-action-label">Create a Split Sheet</span>
+  </div>
+</div>
+
+<!-- KPI Row -->
+<div class="kpi-row">
+  <div class="kpi-card">
+    <div class="kpi-value">4</div>
+    <div class="kpi-label">Active Matters</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">2</div>
+    <div class="kpi-label">Drafts in Progress</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">6</div>
+    <div class="kpi-label">Documents Ready</div>
+  </div>
+  <div class="kpi-card" style="border-color: #FEE2E2;">
+    <div class="kpi-value" style="color:var(--color-crimson);">1</div>
+    <div class="kpi-label">High-Risk to Review</div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <!-- Left Column -->
+  <div>
+    <!-- Continue Where You Left Off -->
+    <div class="continue-card" onclick="navigateTo('app','contract-workspace')">
+      <div class="continue-icon"><i data-lucide="disc"></i></div>
+      <div class="continue-info">
+        <h4>Producer / Composer Agreement for "Midnight Drive"</h4>
+        <p>Last edited 2 hours ago · Step 3 of 4 · <span class="badge badge-drafting"><span class="badge-dot"></span> Drafting</span></p>
+      </div>
+      <i data-lucide="arrow-right" style="width:20px;height:20px;color:var(--color-gray-mid);"></i>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="section-card">
+      <div class="section-card-header">
+        <h3 class="section-card-title">Recent Activity</h3>
+        <button class="btn btn-ghost btn-sm">View All</button>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot draft"></div>
+        <div class="activity-body">
+          <p>Started Producer / Composer Agreement</p>
+          <span>Today, 2:15 PM</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot review"></div>
+        <div class="activity-body">
+          <p>Reviewed Venue Performance Agreement</p>
+          <span>Yesterday, 4:30 PM</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot ready"></div>
+        <div class="activity-body">
+          <p>Exported 50/50 Songwriter Split Sheet</p>
+          <span>Aug 5, 2026</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot draft"></div>
+        <div class="activity-body">
+          <p>Created Exclusive Beat License for "Neon Nights"</p>
+          <span>Aug 3, 2026</span>
+        </div>
+      </div>
+      <div class="activity-item">
+        <div class="activity-dot review"></div>
+        <div class="activity-body">
+          <p>Uploaded Artist Management Agreement for review</p>
+          <span>Aug 1, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Documents -->
+    <div class="section-card">
+      <div class="section-card-header">
+        <h3 class="section-card-title">Recent Documents</h3>
+        <button class="btn btn-ghost btn-sm" onclick="navigateTo('app','my-documents')">View All</button>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Modified</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:var(--weight-semibold);">Producer Agreement — Midnight Drive</td>
+            <td>Producer / Composer</td>
+            <td><span class="badge badge-drafting"><span class="badge-dot"></span> Drafting</span></td>
+            <td>Today</td>
+            <td><button class="btn btn-ghost btn-sm" onclick="toggleDropdown('docMenu1')"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+          </tr>
+          <tr>
+            <td style="font-weight:var(--weight-semibold);">Venue Performance — The Echo LA</td>
+            <td>Venue Performance</td>
+            <td><span class="badge badge-review"><span class="badge-dot"></span> In Review</span></td>
+            <td>Aug 7</td>
+            <td><button class="btn btn-ghost btn-sm" onclick="toggleDropdown('docMenu2')"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+          </tr>
+          <tr>
+            <td style="font-weight:var(--weight-semibold);">Split Sheet — Summer Nights</td>
+            <td>Songwriter Split Sheet</td>
+            <td><span class="badge badge-ready"><span class="badge-dot"></span> Ready</span></td>
+            <td>Aug 5</td>
+            <td><button class="btn btn-ghost btn-sm" onclick="toggleDropdown('docMenu3')"><i data-lucide="more-horizontal" style="width:16px;height:16px;"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div>
+    <!-- Your Deal Readiness -->
+    <div class="section-card">
+      <div class="section-card-header">
+        <h3 class="section-card-title">Your Deal Readiness</h3>
+      </div>
+      <div class="checklist-item checklist-done">
+        <i data-lucide="check-circle"></i> Legal name on file
+      </div>
+      <div class="checklist-item checklist-done">
+        <i data-lucide="check-circle"></i> Preferred governing law set (California)
+      </div>
+      <div class="checklist-item checklist-pending">
+        <i data-lucide="circle"></i> Business entity (LLC, Corp) not on file
+      </div>
+      <div class="checklist-item checklist-done">
+        <i data-lucide="check-circle"></i> Signing workflow configured
+      </div>
+    </div>
+
+    <!-- From the Artispreneur Library -->
+    <div class="section-card">
+      <div class="section-card-header">
+        <h3 class="section-card-title">From the Library</h3>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-3);">
+        <div class="edu-card" onclick="navigateTo('app','contract-library')">
+          <div class="edu-card-icon"><i data-lucide="book-open"></i></div>
+          <div class="edu-card-text">
+            <h4>Understanding Producer Royalties</h4>
+            <p>How points, recoupment, and backend work</p>
+          </div>
+        </div>
+        <div class="edu-card" onclick="navigateTo('app','contract-library')">
+          <div class="edu-card-icon"><i data-lucide="shield"></i></div>
+          <div class="edu-card-text">
+            <h4>5 Red Flags in Label Contracts</h4>
+            <p>What to watch for before signing</p>
+          </div>
+        </div>
+        <div class="edu-card" onclick="navigateTo('app','contract-library')">
+          <div class="edu-card-icon"><i data-lucide="users"></i></div>
+          <div class="edu-card-text">
+            <h4>Split Sheets Done Right</h4>
+            <p>Avoid disputes with clear songwriter splits</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

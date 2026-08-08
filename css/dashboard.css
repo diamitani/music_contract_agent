@@ -1,0 +1,162 @@
+/* ============================
+   Artispreneur — Dashboard Home
+   ============================ */
+
+.dash-greeting {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-1);
+}
+.dash-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-8);
+}
+
+/* KPI row */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+.kpi-row .kpi-card {
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .kpi-row { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .kpi-row { grid-template-columns: 1fr; }
+}
+
+/* Continue card */
+.continue-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+.continue-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-crimson);
+}
+.continue-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  background: #FEF2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.continue-icon i[data-lucide] {
+  width: 24px;
+  height: 24px;
+  color: var(--color-crimson);
+}
+.continue-info {
+  flex: 1;
+}
+.continue-info h4 {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  margin: 0 0 4px;
+}
+.continue-info p {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Activity timeline */
+.activity-item {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.activity-item:last-child { border-bottom: none; }
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.activity-dot.draft { background: var(--color-crimson); }
+.activity-dot.review { background: var(--color-warning); }
+.activity-dot.ready { background: var(--color-success); }
+.activity-body p {
+  font-size: var(--text-sm);
+  margin: 0 0 2px;
+  color: var(--color-text-primary);
+}
+.activity-body span {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+/* Readiness checklist */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  font-size: var(--text-sm);
+}
+.checklist-item i[data-lucide] { width: 18px; height: 18px; }
+.checklist-done i[data-lucide] { color: var(--color-success); }
+.checklist-pending i[data-lucide] { color: var(--color-gray-subtle); }
+
+/* Library education cards */
+.edu-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+.edu-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-crimson);
+}
+.edu-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: #F9F6EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.edu-card-icon i[data-lucide] {
+  width: 20px;
+  height: 20px;
+  color: var(--color-crimson);
+}
+.edu-card-text h4 {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  margin: 0 0 2px;
+}
+.edu-card-text p {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+}

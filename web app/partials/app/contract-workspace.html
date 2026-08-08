@@ -112,50 +112,24 @@
     </div>
 
     <div class="ws-chat" id="wsChat">
-      <!-- Agent: Welcome -->
-      <div class="ws-msg-group agent">
-        <span class="ws-msg-label">Contract Agent</span>
-        <div class="ws-msg-card">
-          <p>Hey Marcus — I've loaded your Producer / Composer Agreement for "Midnight Drive" with Dominic Reyes.</p>
-          <p>We're at step 3 of 4: <strong>Review terms</strong>. Here's where we left off:</p>
-        </div>
-      </div>
-
-      <!-- Agent: Royalty recommendation -->
-      <div class="ws-msg-group agent">
-        <span class="ws-msg-label">Contract Agent</span>
-        <div class="ws-msg-card recommend">
-          <p><strong>Recommended:</strong> You retain 100% ownership of the master recording. Dominic receives his $2,500 flat fee plus negotiated royalty points — no ownership transfer.</p>
-          <p>For independent projects like this, the standard range is 15–20% of net royalties for the producer. What royalty percentage works for you?</p>
-        </div>
-      </div>
-
-      <!-- User response -->
-      <div class="ws-msg-group user">
-        <span class="ws-msg-label">You</span>
-        <div class="ws-msg-card" style="background:var(--color-crimson);color:var(--color-white);border:none;">
-          <p>Let's do 18% net royalties for Dominic.</p>
-        </div>
-      </div>
-
-      <!-- Agent: confirming and next question -->
+      <!-- Agent greets you when workspace loads -->
       <div class="ws-msg-group agent">
         <span class="ws-msg-label">Contract Agent</span>
         <div class="ws-msg-card agent-msg">
-          <p>18% — good call. That's right in the fair range for a producer who's handling composition, arrangement, and studio production.</p>
-          <p>Now: should the royalty apply to <strong>all formats</strong> (streaming, downloads, physical, sync licenses) or just the <strong>master recording</strong> only?</p>
+          <p>Hey Marcus — I've loaded your <strong>Producer / Composer Agreement</strong> for "Midnight Drive" with Dominic Reyes.</p>
+          <p>Your deal facts are set: $2,500 flat fee, you keep 100% master ownership. What would you like to work on next?</p>
         </div>
       </div>
 
-      <!-- Agent: chips -->
       <div class="ws-msg-group agent">
         <span class="ws-msg-label">Contract Agent</span>
         <div class="ws-msg-card">
-          <p style="margin-bottom:12px;">Pick the scope that fits your deal:</p>
+          <p style="margin-bottom:12px;">How can I help?</p>
           <div class="chip-row">
-            <span class="chip selected" onclick="this.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));this.classList.add('selected');">All formats (recommended)</span>
-            <span class="chip" onclick="this.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));this.classList.add('selected');">Master recording only</span>
-            <span class="chip" onclick="this.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));this.classList.add('selected');">Streaming only</span>
+            <span class="chip" onclick="document.getElementById('wsComposerInput').value='Let\'s figure out Dominic\'s royalty percentage and terms.';document.getElementById('wsComposerInput').focus();">Set royalty terms</span>
+            <span class="chip" onclick="document.getElementById('wsComposerInput').value='What delivery deadline should we set for the master recording?';document.getElementById('wsComposerInput').focus();">Delivery deadline</span>
+            <span class="chip" onclick="document.getElementById('wsComposerInput').value='Walk me through the remaining deal points we need to cover.';document.getElementById('wsComposerInput').focus();">Cover remaining deal points</span>
+            <span class="chip" onclick="document.getElementById('wsComposerInput').value='Show me what the contract looks like so far.';document.getElementById('wsComposerInput').focus();">Show me the draft</span>
           </div>
         </div>
       </div>

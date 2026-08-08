@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/api/agent", "destination": "/api/agent" },
+    { "source": "/api/templates", "destination": "/api/templates" },
+    { "source": "/(.*)", "destination": "/$1" }
+  ],
+  "env": {
+    "DEEPSEEK_API_KEY": "@deepseek-api-key"
+  }
+}

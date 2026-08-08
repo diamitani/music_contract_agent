@@ -434,6 +434,26 @@ function toggleDropdown(menuId) {
   }
 }
 
+// ----- API: Call the Contract Agent via DeepSeek -----
+async function callAgent({ messages, contractType, dealFacts, mode }) {
+  try {
+    const res = await fetch('/api/agent', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages, contractType, dealFacts, mode }),
+    });
+    const data = await res.json();
+    if (data.success) {
+      return data.message;
+    } else {
+      throw new Error(data.error || 'Unknown API error');
+    }
+  } catch (err) {
+    console.error('callAgent error:', err);
+    throw err;
+  }
+}
+
 // Make globally available
 window.showToast = showToast;
 window.showModal = showModal;
@@ -444,3 +464,4 @@ window.closeDrawer = closeDrawer;
 window.advanceProgress = advanceProgress;
 window.toggleDropdown = toggleDropdown;
 window.initTabs = initTabs;
+window.callAgent = callAgent;

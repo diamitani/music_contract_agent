@@ -1,0 +1,14 @@
+{
+  "name": "artispreneur-contract-agent",
+  "version": "1.0.0",
+  "description": "Artispreneur Contract Agent — AI-powered music contract drafting and review",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^latest"
+  }
+}

@@ -1,0 +1,33 @@
+id: non-exclusive-beat-license-agreement
+title: Non-Exclusive Beat License Agreement
+status: original
+category: licensing
+rights_affected:
+- composition_publishing
+- sound_recording_master
+parties:
+- Producer
+- Artist
+template_file: non-exclusive-beat-license-agreement.md
+questionnaire_file: non-exclusive-beat-license-agreement-questionnaire.md
+money_fields:
+- License fee (typically the lowest tier a producer sells)
+rights_grant_notes:
+- This is a LICENSE, not ownership — the producer can and will sell the same beat to other artists. Make
+  sure the user understands that before they build a whole campaign around a beat they don't have exclusive
+  rights to.
+control_fields:
+- Usage caps (stream/download limits, no broadcast/sync/paid ads without upgrading)
+- Upgrade path to exclusive if the song starts to take off
+risk_flags:
+- severity: yellow
+  text: if the artist's song starts getting real traction, this license's usage caps can become a real
+    problem (e.g., it wasn't licensed for broadcast or paid ads). Recommend upgrading to an exclusive
+    license before the song is pushed commercially at scale.
+- severity: green
+  text: clear, low-cost way to test a beat before committing to an exclusive purchase — appropriate default
+    for early-stage work.
+intake_questions:
+- What's the license fee, and what usage tier (streams, video use, no broadcast) is being purchased?
+- Does the artist plan to push this song commercially at scale? If so, discuss upgrading to exclusive
+  before finalizing a release plan.

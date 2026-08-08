@@ -1,0 +1,42 @@
+id: exclusive-beat-license-agreement
+title: Exclusive Beat License Agreement
+status: original
+category: licensing
+rights_affected:
+- composition_publishing
+- sound_recording_master
+- income_royalty_recoupment
+parties:
+- Producer
+- Artist
+template_file: exclusive-beat-license-agreement.md
+questionnaire_file: exclusive-beat-license-agreement-questionnaire.md
+money_fields:
+- Purchase price and payment schedule (deposit vs. full payment)
+- Whether a separate publishing split applies on top of the purchase price
+rights_grant_notes:
+- 'Clarify up front: is this an exclusive LICENSE (producer keeps underlying copyright, artist can''t
+  resell the beat itself) or a full BUYOUT (producer assigns copyright entirely)? These are priced very
+  differently and the template defaults to license unless Section 4(c) is activated.'
+- Confirm whether the beat is being removed from beat-store/marketplace listings once paid — this is what
+  'exclusive' actually means operationally, not just legally
+control_fields:
+- Reversion window if the artist never releases anything using the beat
+- Producer credit requirement and exact tag wording
+risk_flags:
+- severity: yellow
+  text: are they aware they're giving up the right to sell this beat to anyone else, permanently, for
+    this price? Producers sometimes under-price exclusives without registering what they're giving up.
+- severity: yellow
+  text: no reversion clause — if the artist never uses the beat, the producer is locked out of ever selling
+    it again with no time limit.
+- severity: yellow
+  text: publishing split percentage left blank — this is a real revenue stream, not boilerplate; don't
+    let it default silently.
+intake_questions:
+- Is this a full buyout (producer keeps nothing) or an exclusive license (producer keeps underlying ownership
+  but can't sell to anyone else)?
+- What's the purchase price, and is it paid upfront or as a deposit + balance on delivery?
+- What publishing percentage does the producer keep on the finished song?
+- Is there a deadline by which the artist needs to release something, after which the producer can take
+  the beat back?

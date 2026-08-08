@@ -1,0 +1,32 @@
+id: songwriter-collaboration-agreement
+title: Songwriter Collaboration Agreement
+status: sourced
+category: songwriting_and_publishing
+rights_affected:
+- composition_publishing
+- approvals_creative_control
+parties:
+- Writer A
+- Writer B
+template_file: songwriter-collaboration-agreement.md
+questionnaire_file: songwriter-collaboration-agreement-questionnaire.md
+money_fields:
+- Ownership percentage per writer
+- Who administers/collects (self, publisher, PRO) and how collected money is distributed
+rights_grant_notes:
+- Confirms this only covers the composition/publishing, not any master recording made of it
+control_fields:
+- Approval rights for licensing the song (samples, sync, cover versions) — unanimous or majority?
+- What happens if one writer wants to license the song and another objects
+risk_flags:
+- severity: yellow
+  text: no default rule for what happens if writers can't agree on a license request — can freeze the
+    song indefinitely.
+- severity: green
+  text: simple percentage splits with each writer independently able to license their own share (standard
+    and artist-friendly) if that's the intent — confirm it's actually wanted.
+intake_questions:
+- What are the agreed percentage splits between writers?
+- Should any single writer be able to approve licenses on their own for their share, or does everyone
+  need to agree?
+- Is a formal split sheet also needed for PRO registration? (recommend yes)

@@ -1,0 +1,35 @@
+id: brand-sponsorship-agreement
+title: Brand Sponsorship Agreement
+status: sourced
+category: brand_and_content
+rights_affected:
+- name_image_likeness
+- exclusivity_noncompete
+- income_royalty_recoupment
+parties:
+- Artist
+- Brand
+template_file: brand-sponsorship-agreement.md
+questionnaire_file: brand-sponsorship-agreement-questionnaire.md
+money_fields:
+- Sponsorship fee structure and payment schedule
+- Performance bonuses/milestones, if any (streams, event attendance, social metrics)
+rights_grant_notes:
+- What exactly is licensed — name, likeness, music, social content — and for what use (events, advertising,
+  product packaging)
+- Term length and renewal terms
+control_fields:
+- Category exclusivity (artist can't endorse a competing brand)
+- Creative approval over how the brand uses the artist's name/image
+- Morals/reputation clause — mutual, not one-sided
+risk_flags:
+- severity: red
+  text: one-sided morals clause that lets the brand terminate for any reputational issue, with no equivalent
+    protection for the artist if the brand does something damaging.
+- severity: yellow
+  text: broad category exclusivity with no carve-out for the artist's existing deals.
+intake_questions:
+- What's the campaign scope — single activation, ongoing partnership, tour sponsorship?
+- What's the fee and payment schedule, and are there performance bonuses?
+- What exclusivity is the brand asking for, and does it conflict with any existing deals?
+- Does the artist want a morals clause to be mutual (either side can exit for cause)?

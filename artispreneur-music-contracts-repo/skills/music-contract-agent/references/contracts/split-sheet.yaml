@@ -1,0 +1,32 @@
+id: split-sheet
+title: Split Sheet
+status: sourced
+category: songwriting_and_publishing
+rights_affected:
+- composition_publishing
+parties:
+- Writer
+- Co-Writer
+template_file: split-sheet.md
+questionnaire_file: split-sheet-questionnaire.md
+money_fields:
+- No payment terms — this document only allocates ownership percentages.
+rights_grant_notes:
+- Splits the composition/publishing only, not the master recording.
+- Percentages across all writers must total exactly 100%.
+control_fields:
+- Sample/interpolation disclosure required before finalizing.
+- Each writer must sign; no partial execution.
+risk_flags:
+- severity: yellow
+  text: Percentages do not sum to 100% — verify math before finalizing.
+- severity: yellow
+  text: A beatmaker paid under a separate license is listed as a co-writer without confirming the license
+    grants a composition percentage.
+- severity: green
+  text: Prompt splits documentation right after a session is the single best low-cost habit for avoiding
+    future disputes.
+intake_questions:
+- Song title and session date?
+- Full legal names and percentage for every contributor?
+- Does the composition contain any sample, interpolation, or replay?

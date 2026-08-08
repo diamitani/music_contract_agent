@@ -1,0 +1,32 @@
+id: venue-rental-contract
+title: Venue Rental Contract
+status: sourced
+category: live_performance_and_venue
+rights_affected:
+- liability_indemnification_insurance
+- income_royalty_recoupment
+parties:
+- Renter
+- Venue Owner
+template_file: venue-rental-contract.md
+questionnaire_file: venue-rental-contract-questionnaire.md
+money_fields:
+- Rental fee, deposit, and payment schedule
+- Additional costs (security, cleaning, overtime hours)
+rights_grant_notes:
+- Confirms a space-rental relationship — not a co-promotion or revenue-share deal unless explicitly added
+control_fields:
+- Set-up/breakdown windows, capacity limits, and permitted activities (alcohol, filming, ticketing)
+- Insurance requirements (event insurance, certificate of insurance naming the venue)
+- Damage deposit refund conditions
+risk_flags:
+- severity: yellow
+  text: no cap on additional/overtime fees — can balloon the cost after the event.
+- severity: yellow
+  text: insurance requirement not specified — confirm what coverage and limits the venue requires before
+    signing.
+intake_questions:
+- What are the exact dates/times needed, including setup and breakdown?
+- What's the rental fee, deposit, and what does the deposit cover/how is it refunded?
+- Does the renter need to provide a certificate of insurance?
+- What activities need to be explicitly permitted (alcohol service, filming, ticket sales)?

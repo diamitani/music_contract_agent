@@ -1,0 +1,33 @@
+id: videographer-photographer-release
+title: Videographer / Photographer Release
+status: sourced
+category: release_forms
+rights_affected:
+- name_image_likeness
+- sound_recording_master
+parties:
+- Subject
+- Photographer/Videographer
+template_file: videographer-photographer-release.md
+questionnaire_file: videographer-photographer-release-questionnaire.md
+money_fields:
+- Flat fee, if any, for the shoot
+rights_grant_notes:
+- Who owns the resulting images/footage — typically the photographer/videographer owns the copyright while
+  granting the subject a license to use it personally/promotionally
+- Whether the creator can license the images to third parties (stock, press) or only use for portfolio
+control_fields:
+- Can the subject request approval before public use of specific images?
+- Credit requirements for the photographer/videographer
+risk_flags:
+- severity: yellow
+  text: no license-back to the subject — artist should always retain the right to use their own photos/video
+    for promo.
+- severity: yellow
+  text: creator granted rights to sell/license images to third parties without artist approval, when that
+    wasn't the intent.
+intake_questions:
+- What's the shoot for (music video, promo photos, behind-the-scenes)?
+- Does the artist need approval rights before images/footage are used publicly?
+- Can the photographer/videographer license these to others, or is use limited to this project and the
+  artist's own promo?

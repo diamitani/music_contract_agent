@@ -1,0 +1,31 @@
+id: dj-booking-agreement
+title: DJ Booking Agreement
+status: sourced
+category: live_performance_and_venue
+rights_affected:
+- income_royalty_recoupment
+- term_renewal_termination
+parties:
+- DJ
+- Venue or Promoter
+template_file: dj-booking-agreement.md
+questionnaire_file: dj-booking-agreement-questionnaire.md
+money_fields:
+- Total fee, deposit amount and due date, balance due date (usually night of show)
+- Travel, lodging, and hospitality rider costs — who pays
+rights_grant_notes:
+- Confirms this is a performance service, not a transfer of any recording or composition rights
+control_fields:
+- Set length and time slot
+- Exclusivity radius (can the DJ play another show nearby before/after this date?)
+- Cancellation policy for both sides and refund of deposit
+risk_flags:
+- severity: yellow
+  text: no cancellation/force majeure clause — DJ has no protection if the venue cancels last-minute.
+- severity: yellow
+  text: deposit non-specified — always get a deposit for club/private bookings.
+intake_questions:
+- What's the date, venue, and set length/time slot?
+- What's the total fee, deposit amount, and when is the balance due?
+- Is there a radius clause restricting other local shows around this date?
+- What happens if either side needs to cancel — refund policy and notice period?

@@ -1,0 +1,46 @@
+id: artist-management-agreement
+title: Artist Management Agreement
+status: sourced
+category: management_and_booking
+rights_affected:
+- income_royalty_recoupment
+- term_renewal_termination
+- exclusivity_noncompete
+parties:
+- Artist
+- Manager
+template_file: artist-management-agreement.md
+questionnaire_file: artist-management-agreement-questionnaire.md
+money_fields:
+- Commission rate (typically 15-20% of gross income)
+- What income is commissionable (recording, publishing, touring, merch, brand deals, sync)
+- What is excluded (e.g., pre-existing deals, songwriting-only income if a separate publisher exists)
+- Commission on income earned after termination (post-term/sunset commission) and for how long
+rights_grant_notes:
+- Manager is NOT granted ownership of masters or compositions — management is a service, not an ownership
+  stake
+- Power of attorney scope, if any — should be narrow (signing on artist's behalf only for specifically
+  listed acts)
+control_fields:
+- 'Exclusivity: is the Manager the artist''s only manager, or only for certain territories/activities?'
+- Term length and whether there are renewal options tied to performance benchmarks
+- 'Termination triggers: for cause (breach, fraud, inactivity) and for convenience (notice period)'
+- Key-person clause if signing with a management company, not an individual
+risk_flags:
+- severity: red
+  text: commission on ALL income for life, or with no sunset after termination.
+- severity: red
+  text: manager also acting as booking agent, label, or publisher without disclosure — commission stacking.
+- severity: yellow
+  text: automatic renewal options with no artist opt-out or performance trigger.
+- severity: yellow
+  text: broad power of attorney allowing the manager to sign contracts or spend money without artist sign-off.
+intake_questions:
+- Is this a new relationship or formalizing an existing informal one? (If informal, note the actual start
+  date — commission disputes often hinge on this.)
+- What commission rate did they agree on verbally, if any?
+- Is the manager an individual or does the artist need to contract with their company?
+- Does the artist already have a separate publisher, booking agent, or label? (affects what's commissionable
+  and avoids double-commissioning)
+- How long should the initial term run, and should renewal depend on the manager hitting specific milestones
+  (e.g., securing a certain amount of income)?

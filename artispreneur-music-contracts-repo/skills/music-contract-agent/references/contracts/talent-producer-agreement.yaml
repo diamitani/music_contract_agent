@@ -1,0 +1,27 @@
+id: talent-producer-agreement
+title: Talent / Producer Agreement
+status: sourced
+category: recording_and_production
+rights_affected:
+- sound_recording_master
+- income_royalty_recoupment
+parties:
+- Talent
+- Producer
+template_file: talent-producer-agreement.md
+questionnaire_file: talent-producer-agreement-questionnaire.md
+money_fields:
+- Fee structure and payment schedule
+- Whether any royalty/backend applies
+rights_grant_notes:
+- Confirms whether this is work-for-hire (producer/company owns the result) or the talent retains rights
+control_fields:
+- Deliverables, deadlines, and revision rounds
+- Credit
+risk_flags:
+- severity: yellow
+  text: ownership of the resulting work not clearly stated — always define this explicitly.
+intake_questions:
+- What exactly is the talent being engaged to do, and what's the deliverable?
+- Is this work-for-hire, or does the talent keep any rights/royalty in the result?
+- What's the fee and payment schedule?

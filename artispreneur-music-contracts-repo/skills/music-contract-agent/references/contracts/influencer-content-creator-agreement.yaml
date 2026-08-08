@@ -1,0 +1,39 @@
+id: influencer-content-creator-agreement
+title: Influencer / Content Creator Agreement
+status: sourced
+category: brand_and_content
+rights_affected:
+- name_image_likeness
+- exclusivity_noncompete
+- income_royalty_recoupment
+parties:
+- Creator
+- Brand
+template_file: influencer-content-creator-agreement.md
+questionnaire_file: influencer-content-creator-agreement-questionnaire.md
+money_fields:
+- Flat fee vs. performance-based (affiliate/commission) compensation
+- Payment schedule tied to deliverables
+rights_grant_notes:
+- What usage rights does the brand get to the content — organic posting only, or paid ad usage ('whitelisting'),
+  and for how long?
+- Does the brand own the content, or just license it?
+control_fields:
+- Number and type of deliverables (posts, stories, videos) and approval/revision process
+- 'Required FTC disclosure language (#ad, #sponsored)'
+- Category exclusivity (can't promote a competing brand for X period)
+risk_flags:
+- severity: red
+  text: perpetual, unlimited paid-ad usage rights to the creator's likeness/content for a one-time flat
+    fee — this is usually worth significantly more and should be priced separately or time-limited.
+- severity: yellow
+  text: no FTC disclosure requirement written into the contract — legal risk for the creator, not just
+    the brand.
+- severity: yellow
+  text: broad exclusivity/non-compete with no time limit.
+intake_questions:
+- What deliverables are expected (# of posts, platform, format) and by when?
+- Is the brand asking to run the content as paid ads ('whitelisting')? If so, that needs separate, time-limited
+  compensation.
+- Is there a category exclusivity requirement, and for how long?
+- What's the payment structure — flat fee, commission, or both?

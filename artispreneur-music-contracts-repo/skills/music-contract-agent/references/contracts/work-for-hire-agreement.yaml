@@ -1,0 +1,38 @@
+id: work-for-hire-agreement
+title: Work-for-Hire Agreement
+status: sourced
+category: recording_and_production
+rights_affected:
+- composition_publishing
+- sound_recording_master
+- income_royalty_recoupment
+parties:
+- Hiring Party
+- Contractor
+template_file: work-for-hire-agreement.md
+questionnaire_file: work-for-hire-agreement-questionnaire.md
+money_fields:
+- Flat fee (work-for-hire is almost always a one-time buyout, not royalty-bearing)
+- Payment schedule tied to delivery/milestones
+rights_grant_notes:
+- Confirms complete transfer of copyright to the hiring party — the contractor keeps nothing unless a
+  royalty/credit is separately negotiated
+- This is the highest-risk-of-regret template for the contractor — make sure they understand it's a full
+  buyout before they sign as the one giving up rights
+control_fields:
+- Delivery deadline and format
+- Revision rounds included
+- Credit, if any (work-for-hire doesn't guarantee credit unless stated)
+risk_flags:
+- severity: always_attorney
+  text: when a substantial or potentially high-value work is being fully bought out for a flat fee — make
+    sure the contractor actually intends to give up all future royalty/backend interest.
+- severity: yellow
+  text: no credit provision even though the contractor expected one — add explicit credit language if
+    desired.
+intake_questions:
+- Which side is the user on — the hiring party or the person being hired?
+- What's being created, and what's the flat fee?
+- Does the contractor want any credit, even though this is a full buyout?
+- Is the contractor fully aware this gives up all future royalty/ownership interest? (if unsure, flag
+  for attorney review before finalizing)

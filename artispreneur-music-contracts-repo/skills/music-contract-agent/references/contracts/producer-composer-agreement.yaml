@@ -1,0 +1,38 @@
+id: producer-composer-agreement
+title: Producer / Composer Agreement
+status: sourced
+category: recording_and_production
+rights_affected:
+- sound_recording_master
+- income_royalty_recoupment
+- composition_publishing
+parties:
+- Producer
+- Artist
+template_file: producer-composer-agreement.md
+questionnaire_file: producer-composer-agreement-questionnaire.md
+money_fields:
+- Flat fee vs. royalty points (or both)
+- Payment schedule (deposit, on-delivery, on-release)
+- Whether points are paid on net or gross, and from what revenue streams (streaming, sync, physical)
+rights_grant_notes:
+- Is this work-for-hire (commissioning party owns everything) or does the producer/composer retain a royalty/points
+  interest and credit?
+- Sample/loop clearance responsibility — who warrants the material is clean
+control_fields:
+- Number of revisions/rounds included in the fee before extra charges apply
+- Delivery format and deadline
+- Credit requirements (liner notes, streaming metadata, video credits)
+risk_flags:
+- severity: yellow
+  text: '''full buyout, no further compensation'' language when the producer expected points — clarify
+    before signing.'
+- severity: yellow
+  text: no defined revision limit, opening the door to unlimited free rework.
+- severity: red
+  text: producer required to warrant sample clearance without being told what samples were used.
+intake_questions:
+- Is this a flat-fee work-for-hire, or does the producer/composer keep a royalty/points interest?
+- What's the fee, and what payment milestones trigger payment?
+- How many revision rounds are included before additional charges apply?
+- What credit does the producer/composer receive, and where (streaming, liner notes, video)?

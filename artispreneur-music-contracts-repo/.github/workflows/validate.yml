@@ -1,0 +1,29 @@
+name: Validate contract library
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate contract library
+        run: python3 scripts/validate_library.py
+
+      - name: Check index is regenerated
+        run: |
+          python3 scripts/generate_index.py
+          git diff --exit-code skills/music-contract-agent/references/00-contract-library-index.md || \
+            (echo "::error::00-contract-library-index.md is stale — run 'python3 scripts/generate_index.py' and commit the result." && exit 1)

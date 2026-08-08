@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://artispreneur.dev/schema/contract.schema.json",
+  "title": "Artispreneur Music Contract Record",
+  "description": "Strict, harness-agnostic schema for one entry in the Music Contract Agent library. Every file in references/contracts/*.yaml MUST validate against this schema. Any agent runtime (Claude, OpenCode, a custom LangChain/LlamaIndex agent, a plain script) can parse these records without understanding prose — this is the machine-readable source of truth. references/00-contract-library-index.md is a generated human-readable view of the same data; regenerate it from the YAML rather than hand-editing it out of sync.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "category",
+    "rights_affected",
+    "parties",
+    "template_file",
+    "questionnaire_file",
+    "money_fields",
+    "rights_grant_notes",
+    "control_fields",
+    "risk_flags",
+    "intake_questions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable slug, kebab-case, matches the template/questionnaire filename stem exactly.",
+      "pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "status": {
+      "type": "string",
+      "enum": ["sourced", "original", "adapted"],
+      "description": "'sourced' = extracted from an uploaded third-party template; 'original' = drafted by this skill from the artist-protective framework; 'adapted' = built from a nearby sourced/original template to cover a gap. Only 'sourced' entries may claim to come from the Artispreneur Contracts Library verbatim."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "management_and_booking",
+        "recording_and_production",
+        "songwriting_and_publishing",
+        "licensing",
+        "live_performance_and_venue",
+        "brand_and_content",
+        "release_forms",
+        "business_formation",
+        "protective_and_general"
+      ]
+    },
+    "rights_affected": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "composition_publishing",
+          "sound_recording_master",
+          "name_image_likeness",
+          "income_royalty_recoupment",
+          "exclusivity_noncompete",
+          "term_renewal_termination",
+          "approvals_creative_control",
+          "liability_indemnification_insurance",
+          "dispute_resolution_governing_law",
+          "confidentiality"
+        ]
+      }
+    },
+    "parties": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "string", "minLength": 2 },
+      "description": "Exactly two named roles, e.g. ['Artist', 'Producer']. For multi-party types (e.g. LLC operating agreement) use the two most common roles and note others in rights_grant_notes."
+    },
+    "template_file": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+\\.md$"
+    },
+    "questionnaire_file": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+-questionnaire\\.md$"
+    },
+    "money_fields": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "rights_grant_notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "control_fields": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "risk_flags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["severity", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "severity": { "type": "string", "enum": ["green", "yellow", "red", "always_attorney"] },
+          "text": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "intake_questions": {
+      "type": "array",
+      "minItems": 2,
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional free-text notes for the drafting agent."
+    }
+  }
+}

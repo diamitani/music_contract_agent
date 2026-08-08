@@ -1,0 +1,36 @@
+id: llc-operating-agreement
+title: LLC Operating Agreement (Music Venture)
+status: sourced
+category: business_formation
+rights_affected:
+- income_royalty_recoupment
+- liability_indemnification_insurance
+- term_renewal_termination
+parties:
+- Member
+- Member
+template_file: llc-operating-agreement.md
+questionnaire_file: llc-operating-agreement-questionnaire.md
+money_fields:
+- Capital contributions per member
+- Distribution schedule and priority (return of capital before profit split, etc.)
+rights_grant_notes:
+- Defines company-level ownership of the business itself (and by extension, any IP the LLC holds), separate
+  from any individual artist's personal masters/publishing — clarify what assets actually sit inside the
+  LLC
+control_fields:
+- Voting rights and what requires unanimous vs. majority approval
+- 'Buy-sell provisions: what happens if a member wants to leave, dies, or wants to sell their stake'
+- Admission of new members
+risk_flags:
+- severity: always_attorney
+  text: for LLC formation documents — state-specific filing requirements and tax elections matter and
+    are outside this skill's scope.
+- severity: yellow
+  text: no buy-sell/exit provision — can trap members in a business relationship with no clean way out.
+intake_questions:
+- How many members, and what percentage does each hold?
+- Is this member-managed (all members vote on decisions) or manager-managed (one or a few run day-to-day)?
+- What happens if a member wants to exit, stops contributing, or the members disagree on a major decision?
+- What state will the LLC be formed in? (This determines filing requirements outside this document — recommend
+  confirming with a local attorney or formation service.)

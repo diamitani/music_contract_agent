@@ -1,0 +1,31 @@
+id: copyright-license-agreement
+title: Copyright License Agreement (Mechanical/Publisher License)
+status: sourced
+category: licensing
+rights_affected:
+- composition_publishing
+- income_royalty_recoupment
+- term_renewal_termination
+parties:
+- Publisher
+- Company
+template_file: copyright-license-agreement.md
+questionnaire_file: copyright-license-agreement-questionnaire.md
+money_fields:
+- Royalty rate per record/stream/unit sold
+- Accounting frequency and cure period if payments are late
+rights_grant_notes:
+- Non-exclusive vs. exclusive license, and to which specific recording/artist/label — should be narrowly
+  scoped, not blanket rights to the composition
+control_fields:
+- What happens if the licensee stops paying — cancellation rights, and whether that ends only the license
+  or also the underlying obligations
+risk_flags:
+- severity: yellow
+  text: license not limited to a specific artist/recording/label — could be read as broader than intended.
+- severity: green
+  text: built-in cancellation-on-nonpayment clause protects the publisher.
+intake_questions:
+- What specific recording, artist, and label is this license limited to?
+- What per-unit royalty rate was agreed?
+- How often should royalty statements be sent?

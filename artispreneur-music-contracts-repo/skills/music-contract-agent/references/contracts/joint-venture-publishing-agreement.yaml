@@ -1,0 +1,34 @@
+id: joint-venture-publishing-agreement
+title: Joint Venture Publishing Agreement
+status: sourced
+category: songwriting_and_publishing
+rights_affected:
+- composition_publishing
+- income_royalty_recoupment
+- liability_indemnification_insurance
+parties:
+- Publisher
+- Record Company
+template_file: joint-venture-publishing-agreement.md
+questionnaire_file: joint-venture-publishing-agreement-questionnaire.md
+money_fields:
+- Cash and property contributed by each partner
+- Percentage of net profit/loss per partner
+rights_grant_notes:
+- This creates a business entity/relationship, not a simple license — treat as high-stakes and recommend
+  attorney/accountant review by default given ongoing shared liability
+control_fields:
+- How new partners can be admitted (should require unanimous consent)
+- What happens on a partner's death, bankruptcy, or exit — does the JV continue?
+- Decision-making process for the JV's business
+risk_flags:
+- severity: always_attorney
+  text: Joint ventures create ongoing shared liability and profit obligations — this is not a one-off
+    contract, it's a business relationship.
+- severity: red
+  text: no clear exit/buyout mechanism if one partner wants out or the relationship breaks down.
+intake_questions:
+- Who are all the partners, and what is each contributing (cash, catalog, distribution, services)?
+- What percentage of profit/loss does each partner receive?
+- Has the user considered forming an actual LLC for liability protection instead of an informal joint
+  venture? (often the better artist-protective default — see the LLC Operating Agreement template)

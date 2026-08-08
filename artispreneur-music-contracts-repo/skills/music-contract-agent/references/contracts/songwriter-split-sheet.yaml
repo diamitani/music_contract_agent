@@ -1,0 +1,34 @@
+id: songwriter-split-sheet
+title: Songwriter Split Sheet (Detailed / PRO-Registration)
+status: sourced
+category: songwriting_and_publishing
+rights_affected:
+- composition_publishing
+parties:
+- Writer
+- Co-Writer
+template_file: songwriter-split-sheet.md
+questionnaire_file: songwriter-split-sheet-questionnaire.md
+money_fields:
+- No payment terms — this document captures PRO-registration data alongside ownership percentages.
+rights_grant_notes:
+- Splits the composition/publishing and captures lyrics-vs-music percentage breakdown per writer.
+- Captures PRO affiliation (ASCAP/BMI/SESAC) and CAE/IPI number for royalty routing.
+control_fields:
+- Sample disclosure required.
+- SSN field in the source template should generally be omitted or collected through a separate secure
+  channel.
+risk_flags:
+- severity: yellow
+  text: Total ownership percentages across all writers do not sum to 100%.
+- severity: yellow
+  text: A writer's publishing percentage is not clarified as carved-out-of vs. in-addition-to their writer's
+    share.
+- severity: yellow
+  text: 'Privacy flag: full Social Security Numbers should not be embedded in a document that will be
+    widely shared; recommend collecting tax ID separately.'
+intake_questions:
+- Song title, session date(s), recording artist, and label?
+- 'For each writer: legal name, publishing company (if any), PRO affiliation, and lyrics/music percentage
+  split?'
+- Does any writer already have a publisher entitled to a percentage?

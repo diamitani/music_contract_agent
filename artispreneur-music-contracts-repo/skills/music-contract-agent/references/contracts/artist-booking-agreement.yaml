@@ -1,0 +1,36 @@
+id: artist-booking-agreement
+title: Artist Booking Agreement (Show/Event)
+status: sourced
+category: management_and_booking
+rights_affected:
+- income_royalty_recoupment
+- liability_indemnification_insurance
+- dispute_resolution_governing_law
+parties:
+- Band
+- Operator
+template_file: artist-booking-agreement.md
+questionnaire_file: artist-booking-agreement-questionnaire.md
+money_fields:
+- Guaranteed fee, deposit, and balance due date
+- Percentage of door/ticket sales, if applicable, and how it's verified
+- Who covers travel/lodging
+rights_grant_notes:
+- Confirms this is a one-off (or short run) live performance service, not an ongoing exclusive booking
+  relationship
+control_fields:
+- Set time and length
+- Merch selling rights at the venue and any commission the venue takes
+- Recording/broadcast rights for the performance — does the artist retain rights to any recording of the
+  show?
+risk_flags:
+- severity: yellow
+  text: no deposit required — increases risk of a no-pay cancellation.
+- severity: yellow
+  text: broad recording/broadcast rights grant to the venue/promoter with no artist approval or compensation
+    for later use.
+intake_questions:
+- What's the date, venue, fee, and payment structure (flat guarantee vs. door split)?
+- What deposit is required and when is the balance due?
+- Does the promoter want to record or livestream the show? If so, on what terms?
+- What are the merch terms at this show?

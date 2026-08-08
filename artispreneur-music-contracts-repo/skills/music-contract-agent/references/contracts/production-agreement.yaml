@@ -1,0 +1,38 @@
+id: production-agreement
+title: Production Agreement (Producer / Production Company)
+status: sourced
+category: recording_and_production
+rights_affected:
+- sound_recording_master
+- term_renewal_termination
+- income_royalty_recoupment
+parties:
+- Artist
+- Production Company
+template_file: production-agreement.md
+questionnaire_file: production-agreement-questionnaire.md
+money_fields:
+- Recording budget and who fronts it
+- Recoupment of production costs from future deals
+- Producer's percentage of any deal secured (development/shopping fee)
+rights_grant_notes:
+- Does the production company own the masters during development, with a plan to shop to labels, or is
+  this artist-owned with a paid producer?
+- What happens to ownership if the production company secures a label deal — do they keep a piece as a
+  production/JV deal?
+control_fields:
+- Exclusivity during the development term
+- Term length and what happens if no deal is secured
+- Approval rights over which labels/deals the artist can accept
+risk_flags:
+- severity: red
+  text: production company takes perpetual master ownership plus a large cut of any future label deal,
+    with no time limit on the exclusivity.
+- severity: yellow
+  text: vague 'reasonable efforts' shopping obligation with no deadline — artist can be locked up indefinitely
+    with no deal materializing.
+intake_questions:
+- Is the goal to get shopped to a label, self-release, or both?
+- Who is funding the recording — the production company, the artist, or split?
+- If a label deal is secured, what percentage or role does the production company keep?
+- What's the outside date — if no deal happens by [date], do all rights revert to the artist?

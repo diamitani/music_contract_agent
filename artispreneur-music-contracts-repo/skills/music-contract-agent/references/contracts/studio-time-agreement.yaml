@@ -1,0 +1,33 @@
+id: studio-time-agreement
+title: Studio Time Agreement
+status: sourced
+category: recording_and_production
+rights_affected:
+- sound_recording_master
+- income_royalty_recoupment
+parties:
+- Client
+- Studio
+template_file: studio-time-agreement.md
+questionnaire_file: studio-time-agreement-questionnaire.md
+money_fields:
+- Hourly or block rate, deposit, and payment due timing
+- Overtime rate if sessions run long
+rights_grant_notes:
+- Confirms the client (artist) owns the resulting masters unless the studio explicitly retains any interest
+  (e.g., in-house engineer/producer taking points)
+control_fields:
+- Cancellation/no-show/late policy and any fees
+- File delivery format and timeline after the session
+- Studio's right to use session as demo reel/portfolio (should require artist consent)
+risk_flags:
+- severity: yellow
+  text: studio claims any ownership interest in the recordings by default — should be an explicit, separate
+    negotiation (see Producer Royalties Agreement), not baked into a simple rental.
+- severity: green
+  text: clear cancellation policy protects both sides.
+intake_questions:
+- How many hours/sessions are booked, and at what rate?
+- Is an engineer/producer included, and do they expect any royalty interest beyond the hourly rate?
+- What's the cancellation/no-show policy?
+- How and when will final files be delivered?

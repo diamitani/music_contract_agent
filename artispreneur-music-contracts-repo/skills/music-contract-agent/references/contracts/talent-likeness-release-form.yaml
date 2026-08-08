@@ -1,0 +1,30 @@
+id: talent-likeness-release-form
+title: Talent / Likeness Release Form
+status: sourced
+category: release_forms
+rights_affected:
+- name_image_likeness
+parties:
+- Talent
+- Producer/Company
+template_file: talent-likeness-release-form.md
+questionnaire_file: talent-likeness-release-form-questionnaire.md
+money_fields:
+- Flat fee, if any, or confirmation this is unpaid/for exposure (flag if unpaid and commercial use is
+  broad)
+rights_grant_notes:
+- Scope of use — specific project only, or broad/perpetual/all-media use. Perpetual releases for no or
+  minimal pay are a common artist-risk pattern and should be flagged.
+control_fields:
+- Whether the talent can revoke consent, and any context restrictions (e.g., not for political or competing-brand
+  use)
+risk_flags:
+- severity: red
+  text: perpetual, worldwide, all-media likeness release for free or a small flat fee with no context
+    restriction.
+- severity: yellow
+  text: no expiration or defined project scope — release could be reused for unrelated future projects.
+intake_questions:
+- What specific project/use is this release for?
+- Is there compensation, and is it a flat fee or ongoing?
+- Should the release be limited to this project, or does the user intend broader use?

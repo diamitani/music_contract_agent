@@ -1,0 +1,38 @@
+id: merchandise-license-agreement
+title: Merchandise License Agreement
+status: original
+category: licensing
+rights_affected:
+- name_image_likeness
+- income_royalty_recoupment
+- term_renewal_termination
+parties:
+- Licensor
+- Licensee
+template_file: merchandise-license-agreement.md
+questionnaire_file: merchandise-license-agreement-questionnaire.md
+money_fields:
+- Royalty rate on net sales (industry range roughly 8-15%)
+- Advance, if any, and whether it's recoupable against royalties
+rights_grant_notes:
+- Confirms the artist/band keeps ownership of their name/logo/trademarks — this is a license to manufacture
+  and sell, not a transfer of the brand itself
+control_fields:
+- Product categories covered (don't grant broader categories than intended)
+- Approval rights over samples before production
+- Sell-off period after termination so the licensee isn't stuck with unsellable inventory, but also isn't
+  selling forever
+risk_flags:
+- severity: yellow
+  text: no minimum sales/good-faith-efforts requirement on an exclusive license — licensee can sit on
+    the rights without actually selling anything.
+- severity: yellow
+  text: no sell-off period defined for after termination — creates disputes about existing inventory.
+- severity: green
+  text: built-in quality-control/sample-approval clause protects brand integrity — keep this even if the
+    user is eager to move fast.
+intake_questions:
+- What product categories are covered (apparel, vinyl, posters, accessories)?
+- Exclusive or non-exclusive, and in what territory?
+- What royalty rate, and is there an advance?
+- Does the artist want sample-approval rights before products go into production?

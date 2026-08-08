@@ -1,0 +1,33 @@
+id: producer-royalties-agreement
+title: Producer Royalties Agreement
+status: sourced
+category: recording_and_production
+rights_affected:
+- income_royalty_recoupment
+parties:
+- Producer
+- Artist
+template_file: producer-royalties-agreement.md
+questionnaire_file: producer-royalties-agreement-questionnaire.md
+money_fields:
+- Royalty rate (points), typically 2-5% of net receipts for a non-featured producer
+- Whether points are 'all-in' (paid from the artist's royalty) or paid on top by the label
+- 'Recoupment: are producer points subject to recoupment of the artist''s advance, or paid from first
+  dollar?'
+rights_grant_notes:
+- Confirms this is a royalty arrangement, not ownership of the master
+control_fields:
+- Accounting frequency (quarterly/semi-annual) and statement/audit rights
+- Credit requirements
+- What happens to points if the track is remixed, re-released, or used in a compilation
+risk_flags:
+- severity: yellow
+  text: no defined accounting schedule or audit right — producer has no way to verify they're being paid
+    correctly.
+- severity: yellow
+  text: points defined as 'all-in' without the producer understanding that means splitting the artist's
+    own royalty, not extra money from the label.
+intake_questions:
+- What point rate did the producer and artist/label agree to?
+- Are the points 'all-in' (from the artist's share) or paid separately by the label?
+- How often will royalty statements be sent, and does the producer want audit rights?

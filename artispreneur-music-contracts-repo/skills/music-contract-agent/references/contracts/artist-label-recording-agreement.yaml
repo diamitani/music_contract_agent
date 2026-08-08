@@ -1,0 +1,47 @@
+id: artist-label-recording-agreement
+title: Artist / Label Recording Agreement
+status: sourced
+category: recording_and_production
+rights_affected:
+- sound_recording_master
+- income_royalty_recoupment
+- approvals_creative_control
+- term_renewal_termination
+parties:
+- Artist
+- Label
+template_file: artist-label-recording-agreement.md
+questionnaire_file: artist-label-recording-agreement-questionnaire.md
+money_fields:
+- Advance amount and recoupment structure
+- Royalty rate (% of net receipts) and how it's calculated
+- Recording fund / budget and whether unspent funds go to the artist
+- Whether costs (video, marketing, tour support) are recoupable or cross-collateralized against other
+  income
+rights_grant_notes:
+- Who owns the masters — Label (traditional deal), Artist with a license to Label (artist-friendly/distribution
+  deal), or a joint venture
+- Territory and format (all media now known or later devised is broad — flag it)
+- Whether rights are exclusive to this label or the artist can also self-release other work
+control_fields:
+- Album/song delivery commitment (how many records, minimum length/quality standard)
+- Creative control over artwork, singles, mixing/mastering, release timing
+- 'Options: does the label have the right to pick up further albums, and on what terms?'
+- Term and what happens if the label doesn't release the record within X months (reversion)
+risk_flags:
+- severity: red
+  text: perpetual or 'life of copyright' master ownership transfer with no reversion.
+- severity: red
+  text: cross-collateralization across unrelated projects (video costs recouped from touring, etc.).
+- severity: yellow
+  text: vague 'all rights in all media now known or hereafter devised, throughout the universe' language
+    — push for defined scope.
+- severity: yellow
+  text: open-ended multi-album options with no minimum advance guaranteed for later albums.
+intake_questions:
+- Does the artist want to keep master ownership (distribution-style deal) or is a traditional ownership
+  transfer acceptable given the advance/support offered?
+- What advance, if any, is on the table, and what specifically does it need to cover?
+- How many albums/songs is this deal for, and is there an option for more?
+- What happens if the label doesn't release the music — is there a release deadline with reversion rights?
+- What creative approvals does the artist want to keep (single choice, artwork, video treatment)?

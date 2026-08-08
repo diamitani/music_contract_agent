@@ -1,0 +1,40 @@
+id: independent-contractor-agreement
+title: Independent Contractor Agreement (General Services)
+status: original
+category: protective_and_general
+rights_affected:
+- composition_publishing
+- confidentiality
+- income_royalty_recoupment
+parties:
+- Client
+- Contractor
+template_file: independent-contractor-agreement.md
+questionnaire_file: independent-contractor-agreement-questionnaire.md
+money_fields:
+- Flat fee, retainer, or per-session rate
+- Payment schedule and reimbursable-expense pre-approval
+rights_grant_notes:
+- 'This is the catch-all template — use it for PR, marketing, social media management, or single-date
+  session work that doesn''t have its own dedicated template. The single most important decision is Section
+  5: work-for-hire (client owns everything) vs. licensed use (contractor keeps ownership, client gets
+  a license).'
+control_fields:
+- Deliverables, deadlines, and included revision rounds
+- Term and notice period to terminate
+- Whether the contractor is free to work with other clients (should be yes, by default, unless real exclusivity
+  is negotiated and paid for)
+risk_flags:
+- severity: yellow
+  text: — a contractor should never end up in a work-for-hire arrangement by default without understanding
+    they're giving up all future rights to what they create.
+- severity: yellow
+  text: independent contractor status claimed but the actual working relationship looks like employment
+    (set hours, exclusive availability, day-to-day supervision) — this can create real legal risk for
+    the hiring party depending on jurisdiction; flag it rather than silently drafting around it.
+intake_questions:
+- What specific services, deliverables, and deadlines are involved?
+- What's the fee structure — flat fee, retainer, or per-session?
+- Should the deliverables be a full work-for-hire buyout, or does the contractor keep ownership and license
+  use to the client?
+- Is any exclusivity actually intended, or is the contractor free to work with others?

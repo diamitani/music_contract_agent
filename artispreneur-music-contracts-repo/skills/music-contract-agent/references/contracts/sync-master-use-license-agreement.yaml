@@ -1,0 +1,38 @@
+id: sync-master-use-license-agreement
+title: Sync / Master Use License Agreement
+status: sourced
+category: licensing
+rights_affected:
+- composition_publishing
+- sound_recording_master
+- income_royalty_recoupment
+parties:
+- Licensor
+- Licensee
+template_file: sync-master-use-license-agreement.md
+questionnaire_file: sync-master-use-license-agreement-questionnaire.md
+money_fields:
+- Sync fee (flat, one-time is typical) and whether it covers both master and publishing or just one
+- Back-end royalties (if the project generates ongoing revenue, e.g., a TV show in syndication)
+rights_grant_notes:
+- 'Exact scope: which project, which cut/edit, what media (TV, streaming, social, ads), what territory,
+  and for how long (perpetuity vs. defined term)'
+- Most-favored-nations clause if multiple rights holders are involved (all get equal terms)
+control_fields:
+- Approval rights over how the music is used (contextual approval — e.g., not paired with content the
+  artist finds objectionable)
+- Credit requirements
+risk_flags:
+- severity: red
+  text: '''in perpetuity, throughout the universe, all media'' grant for a flat one-time fee with no cap
+    on how the music can be reused later (sequels, spin-offs, ads).'
+- severity: yellow
+  text: no most-favored-nations clause when both the master and publishing sides need separate approval
+    — one side could undercut the other's rate.
+intake_questions:
+- What specific project, episode/scene, or campaign is this for?
+- What media and territory does the licensee need (broadcast, streaming, social, paid ads, worldwide vs.
+  one country)?
+- Is this a flat fee, or does the artist want a share of backend revenue (e.g., ad revenue on a viral
+  campaign)?
+- Does the artist have any restrictions on context (e.g., not political ads, not competitor brands)?

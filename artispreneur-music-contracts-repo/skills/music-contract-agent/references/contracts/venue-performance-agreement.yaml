@@ -1,0 +1,32 @@
+id: venue-performance-agreement
+title: Venue Performance Agreement
+status: sourced
+category: live_performance_and_venue
+rights_affected:
+- income_royalty_recoupment
+- liability_indemnification_insurance
+parties:
+- Artist
+- Venue
+template_file: venue-performance-agreement.md
+questionnaire_file: venue-performance-agreement-questionnaire.md
+money_fields:
+- Fee structure (flat, door split, or bar minimum)
+- Deposit and cancellation/refund policy
+rights_grant_notes:
+- Confirms performance service only — no transfer of recording or composition rights unless a separate
+  recording clause is added
+control_fields:
+- Load-in/soundcheck/performance times
+- Who provides sound/lighting equipment and staff
+- Liability and insurance responsibility for equipment and injury
+risk_flags:
+- severity: yellow
+  text: no clear liability/insurance allocation — artist could be on the hook for venue equipment damage
+    or injury claims.
+- severity: yellow
+  text: vague cancellation terms with no defined refund of deposit.
+intake_questions:
+- What's the date, load-in/set times, and total fee structure?
+- Who's providing sound and lighting — the venue or the artist?
+- What's the cancellation policy for weather, illness, or low ticket sales?

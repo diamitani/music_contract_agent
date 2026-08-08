@@ -1,0 +1,34 @@
+id: music-distribution-agreement
+title: Music Distribution Agreement
+status: original
+category: licensing
+rights_affected:
+- sound_recording_master
+- income_royalty_recoupment
+- term_renewal_termination
+parties:
+- Artist
+- Distributor
+template_file: music-distribution-agreement.md
+questionnaire_file: music-distribution-agreement-questionnaire.md
+money_fields:
+- Distributor's fee/revenue share percentage
+- Accounting frequency
+rights_grant_notes:
+- Confirms the artist keeps ownership of masters and compositions — distribution is a service, not a rights
+  transfer, unless the user is dealing with a distributor unusually asking for more
+control_fields:
+- Exclusive vs. non-exclusive distribution rights
+- Takedown rights and how fast the artist can pull a release
+- Whether this covers one release or an ongoing catalog relationship
+risk_flags:
+- severity: red
+  text: a 'distributor' asking for ownership of masters or an equity stake in the recordings — that's
+    no longer a distribution deal, it's a label deal, and should be evaluated as one (see Artist/Label
+    Recording Agreement).
+- severity: yellow
+  text: no defined accounting schedule — distributors should report and pay on a predictable cycle.
+intake_questions:
+- Is this for one release or an ongoing relationship covering future releases too?
+- What's the distributor's fee/revenue share, and how often will they pay out?
+- Does the artist want the ability to pull the release down quickly if needed?
